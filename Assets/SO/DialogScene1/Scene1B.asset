@@ -21,6 +21,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: Rico
@@ -28,6 +30,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -35,6 +39,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -42,6 +48,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -49,4 +57,7 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
+  nextDialogue: {fileID: 11400000, guid: c9d30e560e51b3849900fc464611a60b, type: 2}

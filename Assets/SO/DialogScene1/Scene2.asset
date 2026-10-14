@@ -331,3 +331,4 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     choices: []
+  nextDialogue: {fileID: 0}

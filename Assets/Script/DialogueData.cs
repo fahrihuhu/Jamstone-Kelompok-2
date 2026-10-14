@@ -11,6 +11,10 @@ public class DialogueData : ScriptableObject
 
     [Header("Isi Dialog")]
     public DialogueLine[] lines;
+
+    [Header("Lanjutan Otomatis (opsional)")]
+    [Tooltip("Kalau semua baris sudah habis, otomatis lanjut ke dialog ini. Kosongkan kalau scene ini berakhir lewat pilihan, atau memang akhir cerita.")]
+    public DialogueData nextDialogue;
 }
 
 [System.Serializable]
