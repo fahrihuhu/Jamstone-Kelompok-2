@@ -170,7 +170,14 @@ public class GameManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        Debug.Log("Dialogue selesai atau tidak ada DialogueData berikutnya.");
+        // Kalau dialog ini punya lanjutan otomatis, langsung pindah ke sana
+        if (currentDialogue != null && currentDialogue.nextDialogue != null)
+        {
+            StartDialogue(currentDialogue.nextDialogue, 0);
+            return;
+        }
+
+        Debug.Log("Dialogue selesai dan tidak ada DialogueData berikutnya.");
         dialogueBox.SetActive(false);
     }
 
