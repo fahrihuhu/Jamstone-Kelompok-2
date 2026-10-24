@@ -115,8 +115,13 @@ public class GameManager : MonoBehaviour
         if (isTyping)
         {
             StopAllCoroutines();
-            dialogueText.text = currentDialogue.lines[currentIndex].dialogueText;
+            DialogueLine typingLine = currentDialogue.lines[currentIndex];
+            dialogueText.text = typingLine.dialogueText;
             isTyping = false;
+
+            // Coroutine pilihan ikut berhenti oleh StopAllCoroutines, jadi munculkan langsung
+            if (typingLine.choices != null && typingLine.choices.Length > 0)
+                ShowChoices(typingLine.choices);
             return;
         }
 
@@ -170,11 +175,27 @@ public class GameManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        // Kalau dialog ini punya lanjutan otomatis, langsung pindah ke sana
-        if (currentDialogue != null && currentDialogue.nextDialogue != null)
+        if (currentDialogue != null)
         {
-            StartDialogue(currentDialogue.nextDialogue, 0);
-            return;
+            // 1. Cek lanjutan bersyarat dulu (berdasarkan story flag)
+            if (currentDialogue.conditionalNexts != null)
+            {
+                foreach (var cn in currentDialogue.conditionalNexts)
+                {
+                    if (cn.nextDialogue != null && GetFlag(cn.conditionKey) == cn.conditionValue)
+                    {
+                        StartDialogue(cn.nextDialogue, 0);
+                        return;
+                    }
+                }
+            }
+
+            // 2. Kalau tidak ada yang cocok, pakai lanjutan biasa
+            if (currentDialogue.nextDialogue != null)
+            {
+                StartDialogue(currentDialogue.nextDialogue, 0);
+                return;
+            }
         }
 
         Debug.Log("Dialogue selesai dan tidak ada DialogueData berikutnya.");

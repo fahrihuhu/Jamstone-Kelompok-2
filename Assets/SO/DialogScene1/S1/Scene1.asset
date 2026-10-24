@@ -21,21 +21,27 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: ???
     dialogueText: Loh, anak baru ya?
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: ???
     dialogueText: Hahaha! Karena lu masih baru disini, lu harus bayar uang tol dulu
       baru boleh masuk!
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -43,6 +49,17 @@ MonoBehaviour:
     isThought: 1
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: sfx
+    dialogueText: 'SFX: Langkah kaki lain mendekat. Gita muncul di layar'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: 
@@ -51,6 +68,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -58,6 +77,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -65,6 +86,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -72,13 +95,23 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
     choices:
     - choiceText: 'OPSI 1: Berikan Rico Uang'
       nextDialogue: {fileID: 11400000, guid: cd20228bde53fd04fa1b647c7b1ee2e9, type: 2}
       nextLineIndex: -1
+      setFlagKey: rico_result
+      setFlagValue: damai
     - choiceText: 'OPSI 2: Kabur '
       nextDialogue: {fileID: 11400000, guid: 21e5854bd586ac140954733c198d6850, type: 2}
       nextLineIndex: -1
+      setFlagKey: rico_result
+      setFlagValue: waspada
     - choiceText: 'OPSI 3: Lawan '
       nextDialogue: {fileID: 11400000, guid: b49e00db5b817e84090cf698e54d6931, type: 2}
       nextLineIndex: -1
+      setFlagKey: rico_result
+      setFlagValue: waspada
+  nextDialogue: {fileID: 0}
+  conditionalNexts: []
