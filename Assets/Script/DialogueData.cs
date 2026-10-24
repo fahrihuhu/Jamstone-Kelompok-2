@@ -15,6 +15,17 @@ public class DialogueData : ScriptableObject
     [Header("Lanjutan Otomatis (opsional)")]
     [Tooltip("Kalau semua baris sudah habis, otomatis lanjut ke dialog ini. Kosongkan kalau scene ini berakhir lewat pilihan, atau memang akhir cerita.")]
     public DialogueData nextDialogue;
+
+    [Tooltip("Dicek berurutan dari atas. Yang pertama cocok dengan story flag akan dipakai. Kalau tidak ada yang cocok, dipakai Next Dialogue di atas.")]
+    public ConditionalNext[] conditionalNexts;
+}
+
+[System.Serializable]
+public class ConditionalNext
+{
+    public string conditionKey;
+    public string conditionValue;
+    public DialogueData nextDialogue;
 }
 
 [System.Serializable]

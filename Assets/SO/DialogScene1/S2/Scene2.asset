@@ -612,4 +612,8 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     choices: []
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: 925a81fec983d2144acda295e320f701, type: 2}
+  conditionalNexts:
+  - conditionKey: rico_result
+    conditionValue: waspada
+    nextDialogue: {fileID: 11400000, guid: 4edee7c51adbfd54591b8d3c47b3dd2c, type: 2}
