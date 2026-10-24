@@ -28,6 +28,37 @@ public class ConditionalNext
     public DialogueData nextDialogue;
 }
 
+public enum StageAction
+{
+    Show,              // Munculkan karakter di slot posisi tertentu
+    Hide,              // Hilangkan satu karakter dari layar
+    ChangeExpression,  // Ganti ekspresi karakter yang sudah ada di layar
+    HideAll            // Kosongkan seluruh panggung (misal pindah lokasi)
+}
+
+public enum StagePosition
+{
+    Left = 0,
+    Center = 1,
+    Right = 2
+}
+
+// Satu perintah panggung. Dijalankan saat baris dialog yang memilikinya tampil.
+[System.Serializable]
+public class StageCommand
+{
+    public StageAction action;
+
+    [Tooltip("Karakter yang dituju. Tidak dipakai untuk HideAll.")]
+    public CharacterData character;
+
+    [Tooltip("Hanya dipakai untuk Show")]
+    public StagePosition position = StagePosition.Center;
+
+    [Tooltip("Nama ekspresi. Dipakai untuk Show dan ChangeExpression. Harus cocok dengan salah satu di CharacterData.")]
+    public string expression = "Normal";
+}
+
 [System.Serializable]
 public class DialogueLine
 {
@@ -54,6 +85,14 @@ public class DialogueLine
     [Tooltip("Isi kalau baris ini cuma boleh muncul kalau story flag tertentu punya nilai tertentu. Kosongkan kalau baris selalu tampil.")]
     public string conditionKey = "";
     public string conditionValue = "";
+
+    [Header("Minigame (opsional)")]
+    [Tooltip("Isi dengan nama scene Unity minigame. Saat baris ini tercapai, minigame langsung dibuka (teks baris ini tidak ditampilkan). Scene harus ada di Build Settings.")]
+    public string minigameSceneName = "";
+
+    [Header("Perintah Panggung (opsional)")]
+    [Tooltip("Muncul, hilang, atau ganti ekspresi karakter di layar. Dijalankan berurutan saat baris ini tampil.")]
+    public StageCommand[] stageCommands;
 
     [Header("Percabangan (opsional)")]
     [Tooltip("Isi kalau baris ini adalah titik pilihan pemain")]

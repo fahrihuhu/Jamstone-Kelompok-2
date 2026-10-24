@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Rico
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  expressions: []
+  expressions:
+  - expressionName: a
+    sprite: {fileID: 475899931840480484, guid: 4938006dec8b8d940ae21c970e911b6b, type: 3}

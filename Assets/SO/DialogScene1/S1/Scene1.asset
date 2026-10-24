@@ -23,6 +23,12 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 0
+      expression: a
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: ???
@@ -32,6 +38,12 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: a
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: ???
@@ -42,6 +54,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -51,6 +65,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: sfx
@@ -60,6 +76,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: 
@@ -70,6 +88,12 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 1
+      expression: a
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -79,6 +103,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -88,6 +114,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -97,6 +125,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices:
     - choiceText: 'OPSI 1: Berikan Rico Uang'
       nextDialogue: {fileID: 11400000, guid: cd20228bde53fd04fa1b647c7b1ee2e9, type: 2}
