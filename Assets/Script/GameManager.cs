@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,12 +14,20 @@ public class GameManager : MonoBehaviour
     public GameObject dialogueBox;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
-    public Image characterSpriteUI;
+    public CharacterStage stage;
     public Image backgroundUI;
 
     [Header("UI - Pilihan")]
     public GameObject choicePanel;
     public Button choiceButtonPrefab;
+
+    [Header("Minigame")]
+    [Tooltip("Root Canvas VN, disembunyikan selama minigame berjalan")]
+    public GameObject vnCanvas;
+
+    // Akses cepat dari scene minigame: GameManager.Instance.ReportMinigameResult(...)
+    public static GameManager Instance { get; private set; }
+    private string minigameResult = null;
 
     // State saat ini
     private DialogueData currentDialogue;
@@ -28,6 +37,11 @@ public class GameManager : MonoBehaviour
 
     // Story flags: "ingatan" pilihan pemain, bertahan sepanjang playthrough (dan ikut ke-save)
     private Dictionary<string, string> storyFlags = new Dictionary<string, string>();
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -67,19 +81,23 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        // Baris pemicu minigame: buka minigame, teks baris ini tidak ditampilkan
+        if (!string.IsNullOrEmpty(line.minigameSceneName))
+        {
+            StopAllCoroutines();
+            StartCoroutine(RunMinigame(line.minigameSceneName));
+            return;
+        }
+
         nameText.text = line.GetDisplayName();
         nameText.color = line.character != null ? line.character.nameColor : Color.white;
         dialogueText.fontStyle = line.isThought ? FontStyles.Italic : FontStyles.Normal;
 
-        if (line.character != null)
+        // Panggung: jalankan perintah (muncul/hilang/ganti ekspresi), lalu sorot yang bicara
+        if (stage != null)
         {
-            Sprite exp = line.character.GetExpression(line.expression);
-            characterSpriteUI.enabled = exp != null;
-            characterSpriteUI.sprite = exp;
-        }
-        else
-        {
-            characterSpriteUI.enabled = false;
+            stage.ExecuteCommands(line.stageCommands);
+            stage.SetSpeaker(line.character);
         }
 
         if (line.backgroundOverride != null)
@@ -200,6 +218,37 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Dialogue selesai dan tidak ada DialogueData berikutnya.");
         dialogueBox.SetActive(false);
+    }
+
+    // ================= MINIGAME =================
+
+    private IEnumerator RunMinigame(string sceneName)
+    {
+        minigameResult = null;
+        if (vnCanvas != null) vnCanvas.SetActive(false);
+
+        // Buka scene minigame di atas scene VN (VN tetap hidup, state aman)
+        yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+
+        // Tunggu sampai minigame melapor hasilnya
+        while (minigameResult == null)
+            yield return null;
+
+        SetFlag("minigame_result", minigameResult);
+
+        yield return SceneManager.UnloadSceneAsync(sceneName);
+
+        if (vnCanvas != null) vnCanvas.SetActive(true);
+
+        // Lanjut ke baris setelah titik minigame
+        currentIndex++;
+        ShowLine();
+    }
+
+    // Dipanggil oleh script di scene minigame saat permainan selesai
+    public void ReportMinigameResult(bool won)
+    {
+        minigameResult = won ? "lolos" : "tertangkap";
     }
 
     // ================= STORY FLAGS =================

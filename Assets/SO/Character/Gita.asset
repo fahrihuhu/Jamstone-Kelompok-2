@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Gita
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  expressions: []
+  expressions:
+  - expressionName: a
+    sprite: {fileID: 2573873144176903071, guid: 0498e0a3627ba69438ccf52d78ad78d9, type: 3}

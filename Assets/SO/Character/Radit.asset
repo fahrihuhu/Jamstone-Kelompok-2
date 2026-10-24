@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Radit
   nameColor: {r: 1, g: 1, b: 1, a: 1}
-  expressions: []
+  expressions:
+  - expressionName: a
+    sprite: {fileID: 3175250354601194271, guid: 28a6afb0f7d51884c92f1e5ea879dfee, type: 3}
