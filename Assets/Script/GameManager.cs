@@ -17,6 +17,14 @@ public class GameManager : MonoBehaviour
     public CharacterStage stage;
     public Image backgroundUI;
 
+    [Header("Audio")]
+    [Tooltip("AudioSource untuk efek suara per baris (SFX)")]
+    public AudioSource sfxSource;
+
+    [Header("History")]
+    [Tooltip("Boleh dikosongkan kalau belum memakai fitur history")]
+    public DialogueHistory history;
+
     [Header("UI - Pilihan")]
     public GameObject choicePanel;
     public Button choiceButtonPrefab;
@@ -103,6 +111,14 @@ public class GameManager : MonoBehaviour
         if (line.backgroundOverride != null)
             backgroundUI.sprite = line.backgroundOverride;
 
+        // Efek suara per baris (misal: Brukk)
+        //if (line.sfxClip != null && sfxSource != null)
+        //    sfxSource.PlayOneShot(line.sfxClip);
+
+        // Catat ke history (baris yang dilewati karena syarat flag tidak sampai ke sini)
+        if (history != null)
+            history.AddLine(line.GetDisplayName(), line.dialogueText, line.isThought);
+
         StopAllCoroutines();
         StartCoroutine(TypeText(line.dialogueText));
 
@@ -166,6 +182,9 @@ public class GameManager : MonoBehaviour
     private void OnChoiceSelected(DialogueChoice choice)
     {
         ClearChoices();
+
+        if (history != null)
+            history.AddChoice(choice.choiceText);
 
         // Simpan flag kalau pilihan ini perlu "diingat" untuk scene lain
         if (!string.IsNullOrEmpty(choice.setFlagKey))

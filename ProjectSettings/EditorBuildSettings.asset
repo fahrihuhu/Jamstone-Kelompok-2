@@ -12,7 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 83235aeac455a9143bb7ad49b82abef0
   - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 30849e5dd68919f46a4cb13cc895317b
+  - enabled: 1
     path: Assets/Scenes/Ingame.unity
     guid: a8b7494d68b8bc34fb4b0cc5005834e1
+  - enabled: 1
+    path: Assets/Scenes/Kejar.unity
+    guid: b886a3a8432b6284c90997716f6b2013
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

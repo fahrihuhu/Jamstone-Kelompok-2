@@ -6,7 +6,7 @@ using TMPro;
 
 // Taruh di GameObject "IntroSequence" di IntroScene.
 // Urutan: layar hitam -> teks fade in/out satu per satu -> gambar gerbang fade in
-//         -> layar fade ke hitam -> pindah ke VNScene.
+//         -> (opsional) layar fade ke hitam -> pindah ke VNScene.
 public class IntroSequence : MonoBehaviour
 {
     [Header("Referensi UI")]
@@ -41,13 +41,10 @@ public class IntroSequence : MonoBehaviour
 
     [Space]
     public float gateFadeIn = 3f;
-    [Tooltip("Lama gambar bergeser dari bawah ke atas (berjalan bersamaan dengan fade in)")]
-    public float gatePanDuration = 5f;
-    [Tooltip("Centang: tampilan mulai dari bagian bawah gambar lalu mendongak ke atas. Hilangkan centang untuk arah sebaliknya.")]
-    public bool panBottomToTop = true;
-    [Tooltip("Lama gambar gerbang ditahan setelah selesai bergeser, sebelum layar menggelap")]
+    [Tooltip("Lama gambar gerbang ditahan setelah fade in selesai, sebelum pindah scene")]
     public float gateHold = 1.5f;
-    public float fadeOutDuration = 1.5f;
+    [Tooltip("Lama layar menggelap sebelum pindah scene. Isi 0 kalau gambar gerbang harus langsung tersambung ke VNScene tanpa menggelap.")]
+    public float fadeOutDuration = 0f;
 
     [Header("Scene Tujuan")]
     [Tooltip("Harus sama persis dengan nama scene, dan sudah ada di Build Settings")]
@@ -59,9 +56,6 @@ public class IntroSequence : MonoBehaviour
         SetAlpha(introText, 0f);
         SetAlpha(gateImage, 0f);
         SetAlpha(fadeOverlay, 0f);
-
-        // Taruh gambar gerbang di titik awal pan (belum terlihat karena alpha 0)
-        SetGateY(GetPanStartY());
 
         StartCoroutine(PlayIntro());
     }
@@ -86,71 +80,13 @@ public class IntroSequence : MonoBehaviour
             yield return new WaitForSeconds(gapBetweenTexts);
         }
 
-        // Gambar gerbang muncul perlahan sambil bergeser (kamera mendongak)
+        // Gambar gerbang muncul perlahan, suara mengecil bersamaan
         StartCoroutine(FadeOutAudio(audioFadeOutDuration));
-        Coroutine pan = StartCoroutine(PanGate());
         yield return Fade(gateImage, 0f, 1f, gateFadeIn);
-        yield return pan; // pastikan geseran selesai dulu
         yield return new WaitForSeconds(gateHold);
 
         // Layar menggelap, lalu pindah scene
         yield return FadeOutAndLoad();
-    }
-
-    // ================= PAN GAMBAR GERBANG =================
-
-    // Selisih tinggi gambar dengan layar = jarak yang bisa digeser.
-    // Gambar harus lebih tinggi dari Canvas, dan anchor/pivot-nya di tengah.
-    private float GetExtraHeight()
-    {
-        RectTransform imageRect = gateImage.rectTransform;
-        RectTransform parentRect = imageRect.parent as RectTransform;
-        if (parentRect == null) return 0f;
-        return Mathf.Max(0f, imageRect.rect.height - parentRect.rect.height);
-    }
-
-    // Gambar digeser ke atas = bagian bawah gambar terlihat. Digeser ke bawah = bagian atas terlihat.
-    private float GetPanStartY()
-    {
-        float half = GetExtraHeight() / 2f;
-        return panBottomToTop ? half : -half;
-    }
-
-    private float GetPanEndY()
-    {
-        float half = GetExtraHeight() / 2f;
-        return panBottomToTop ? -half : half;
-    }
-
-    private void SetGateY(float y)
-    {
-        if (gateImage == null) return;
-        Vector2 pos = gateImage.rectTransform.anchoredPosition;
-        pos.y = y;
-        gateImage.rectTransform.anchoredPosition = pos;
-    }
-
-    private IEnumerator PanGate()
-    {
-        float startY = GetPanStartY();
-        float endY = GetPanEndY();
-
-        if (gatePanDuration <= 0f || Mathf.Approximately(startY, endY))
-        {
-            SetGateY(endY);
-            yield break;
-        }
-
-        float t = 0f;
-        while (t < gatePanDuration)
-        {
-            t += Time.deltaTime;
-            // SmoothStep: mulai dan berhenti dengan halus, tidak kaku
-            float eased = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(t / gatePanDuration));
-            SetGateY(Mathf.Lerp(startY, endY, eased));
-            yield return null;
-        }
-        SetGateY(endY);
     }
 
     // Semua suara mengecil sampai hilang, masing-masing dari volumenya sendiri, lalu dihentikan

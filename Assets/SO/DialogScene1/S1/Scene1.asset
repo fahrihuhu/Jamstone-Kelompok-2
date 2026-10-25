@@ -17,10 +17,55 @@ MonoBehaviour:
   lines:
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
-    dialogueText: M-maaf bang..
+    dialogueText: ("Cuma perlu bertahan setahun. Jangan cari masalah, jaga nilai
+      tetap sempurna, dan lulus..")
+    isThought: 1
+    expression: 
+    backgroundOverride: {fileID: 2063826154672905881, guid: a99f48091e762f0489a2f7fb08fad1b7, type: 3}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Brukk
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: .
+    dialogueText: //Seseorang menabrak baru Tono dari belakang hingga ia tersungkur//.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: ???
+    dialogueText: Jangan berdiri di tengah jalan, bangsat!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: M-maaf bang..
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 7744845136721301162, guid: f80da2d26cef09c44ba04fb52fb8ba6a, type: 3}
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -80,7 +125,7 @@ MonoBehaviour:
     stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
-    speakerNameOverride: 
+    speakerNameOverride: ???
     dialogueText: Elah, Rico. Pagi-pagi udah malak anak orang aja. Lagi gaada duit
       buat beli rokok?
     isThought: 0
