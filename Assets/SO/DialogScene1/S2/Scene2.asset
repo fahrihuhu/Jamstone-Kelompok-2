@@ -21,9 +21,11 @@ MonoBehaviour:
       meja-meja penuh coretan. SFX: Suara riuh murid kelas bercakap-cakap.'
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: 
@@ -33,6 +35,12 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: a
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -42,6 +50,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -52,6 +62,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -61,6 +73,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -70,6 +84,12 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: a
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -80,6 +100,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -89,15 +111,19 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
-    speakerNameOverride: 
+    speakerNameOverride: ???
     dialogueText: Eh.. B-boleh kok, silakan..
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -107,6 +133,16 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 0
+      expression: a
+    - action: 0
+      character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+      position: 2
+      expression: a
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -116,6 +152,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -125,6 +163,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -134,6 +174,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -143,6 +185,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -153,6 +197,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: rico_result
     conditionValue: damai
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -163,6 +209,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: rico_result
     conditionValue: damai
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -172,6 +220,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: rico_result
     conditionValue: waspada
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -181,6 +231,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: rico_result
     conditionValue: waspada
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -191,6 +243,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -200,6 +254,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -209,15 +265,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
-    choices: []
-  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-    speakerNameOverride: Tono
-    dialogueText: Tahu sih.. Katanya, disini seperti penjara.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    conditionKey: 
-    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -227,6 +276,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -236,6 +287,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -245,6 +298,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -254,6 +309,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -263,6 +320,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -273,6 +332,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -284,6 +345,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -294,6 +357,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -303,6 +368,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -312,6 +379,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -323,6 +392,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -332,6 +403,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -343,6 +416,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -353,6 +428,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -362,6 +439,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -371,6 +450,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -380,6 +461,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -389,6 +472,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -399,6 +484,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -408,6 +495,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -418,6 +507,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -429,6 +520,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -439,6 +532,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -449,6 +544,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -458,6 +555,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -467,6 +566,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -478,6 +579,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -488,6 +591,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -498,6 +603,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -507,6 +614,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -517,6 +626,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -526,15 +637,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
-    choices: []
-  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
-    speakerNameOverride: Radit
-    dialogueText: Namun tidak separah itu karena aku selalu mengikuti kemauan mereka.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    conditionKey: 
-    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -544,6 +648,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: 
@@ -553,6 +659,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -562,6 +670,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: 
@@ -571,6 +681,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: 
@@ -581,6 +693,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: 
@@ -591,6 +705,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: 
@@ -601,6 +717,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: 
@@ -611,6 +729,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   nextDialogue: {fileID: 11400000, guid: 925a81fec983d2144acda295e320f701, type: 2}
   conditionalNexts:
