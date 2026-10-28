@@ -7,7 +7,8 @@ using UnityEngine.UI;
 // Yang sedang bicara tampil terang, yang lain diredupkan.
 public class CharacterStage : MonoBehaviour
 {
-    [Header("Slot Posisi (urutan: Kiri, Tengah, Kanan)")]
+    [Header("Slot Posisi")]
+    [Tooltip("Urutan: 0 Left, 1 Center, 2 Right, 3 FarLeft, 4 FarRight")]
     public Image[] slots;
 
     [Header("Efek")]

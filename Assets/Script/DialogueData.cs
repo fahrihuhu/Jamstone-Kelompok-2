@@ -38,9 +38,11 @@ public enum StageAction
 
 public enum StagePosition
 {
-    Left = 0,
-    Center = 1,
-    Right = 2
+    FarLeft = 0,
+    Left = 1,
+    Center = 2,
+    Right = 3,
+    FarRight = 4
 }
 
 // Satu perintah panggung. Dijalankan saat baris dialog yang memilikinya tampil.
@@ -80,6 +82,11 @@ public class DialogueLine
 
     [Header("Visual Tambahan (opsional)")]
     public Sprite backgroundOverride;
+
+    [Header("Efek Suara (opsional)")]
+    [Tooltip("SFX yang diputar sekali saat baris ini tampil, misal: Brukk")]
+    public AudioClip sfxClip;
+    [Range(0f, 1f)] public float sfxVolume = 1f;
 
     [Header("Kondisi Tampil (opsional)")]
     [Tooltip("Isi kalau baris ini cuma boleh muncul kalau story flag tertentu punya nilai tertentu. Kosongkan kalau baris selalu tampil.")]

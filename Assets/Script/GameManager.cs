@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
     public CharacterStage stage;
     public Image backgroundUI;
 
+    [Header("UI - Next Indicator")]
+    [Tooltip("Sprite segitiga kebalik, muncul saat teks sudah selesai dimuat")]
+    public GameObject nextIndicator;
+
     [Header("Audio")]
     [Tooltip("AudioSource untuk efek suara per baris (SFX)")]
     public AudioSource sfxSource;
@@ -68,6 +72,7 @@ public class GameManager : MonoBehaviour
     private void ShowLine()
     {
         ClearChoices();
+        SetIndicator(false);
 
         if (currentDialogue == null || currentIndex >= currentDialogue.lines.Length)
         {
@@ -112,21 +117,23 @@ public class GameManager : MonoBehaviour
             backgroundUI.sprite = line.backgroundOverride;
 
         // Efek suara per baris (misal: Brukk)
-        //if (line.sfxClip != null && sfxSource != null)
-        //    sfxSource.PlayOneShot(line.sfxClip);
+        if (line.sfxClip != null && sfxSource != null)
+            sfxSource.PlayOneShot(line.sfxClip, line.sfxVolume);
 
         // Catat ke history (baris yang dilewati karena syarat flag tidak sampai ke sini)
         if (history != null)
             history.AddLine(line.GetDisplayName(), line.dialogueText, line.isThought);
 
-        StopAllCoroutines();
-        StartCoroutine(TypeText(line.dialogueText));
+        bool hasChoices = line.choices != null && line.choices.Length > 0;
 
-        if (line.choices != null && line.choices.Length > 0)
+        StopAllCoroutines();
+        StartCoroutine(TypeText(line.dialogueText, hasChoices));
+
+        if (hasChoices)
             StartCoroutine(ShowChoicesAfterTyping(line.choices));
     }
 
-    private IEnumerator TypeText(string text)
+    private IEnumerator TypeText(string text, bool hasChoices)
     {
         isTyping = true;
         dialogueText.text = "";
@@ -136,6 +143,10 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.02f);
         }
         isTyping = false;
+
+        // Teks sudah utuh: tampilkan indikator (kecuali baris ini punya pilihan)
+        if (!hasChoices)
+            SetIndicator(true);
     }
 
     private IEnumerator ShowChoicesAfterTyping(DialogueChoice[] choices)
@@ -146,23 +157,15 @@ public class GameManager : MonoBehaviour
 
     public void OnAdvanceClicked()
     {
-        if (isTyping)
-        {
-            StopAllCoroutines();
-            DialogueLine typingLine = currentDialogue.lines[currentIndex];
-            dialogueText.text = typingLine.dialogueText;
-            isTyping = false;
+        // Teks belum selesai dimuat: klik diabaikan, tidak bisa skip
+        if (isTyping) return;
 
-            // Coroutine pilihan ikut berhenti oleh StopAllCoroutines, jadi munculkan langsung
-            if (typingLine.choices != null && typingLine.choices.Length > 0)
-                ShowChoices(typingLine.choices);
-            return;
-        }
-
+        // Baris dengan pilihan: pemain harus memilih lewat tombol, bukan next
         if (currentDialogue.lines[currentIndex].choices != null &&
             currentDialogue.lines[currentIndex].choices.Length > 0)
             return;
 
+        SetIndicator(false); // Sembunyikan lagi setelah diklik
         currentIndex++;
         ShowLine();
     }
@@ -210,6 +213,12 @@ public class GameManager : MonoBehaviour
         choicePanel.SetActive(false);
     }
 
+    private void SetIndicator(bool show)
+    {
+        if (nextIndicator != null)
+            nextIndicator.SetActive(show);
+    }
+
     private void EndDialogue()
     {
         if (currentDialogue != null)
@@ -236,6 +245,7 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log("Dialogue selesai dan tidak ada DialogueData berikutnya.");
+        SetIndicator(false);
         dialogueBox.SetActive(false);
     }
 
