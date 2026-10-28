@@ -21,7 +21,9 @@ MonoBehaviour:
       tetap sempurna, dan lulus..")
     isThought: 1
     expression: 
-    backgroundOverride: {fileID: 2063826154672905881, guid: a99f48091e762f0489a2f7fb08fad1b7, type: 3}
+    backgroundOverride: {fileID: 3603805097988156399, guid: 77dc3ab270ef1b74b948bcf4b27b3bfb, type: 3}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -29,10 +31,12 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
-    dialogueText: Brukk
+    dialogueText: (BRUKKK...)
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: 2063826154672905881, guid: a99f48091e762f0489a2f7fb08fad1b7, type: 3}
+    sfxClip: {fileID: 8300000, guid: 79e50eb1bb147cc459860898df6938f5, type: 3}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -40,10 +44,12 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: .
-    dialogueText: //Seseorang menabrak baru Tono dari belakang hingga ia tersungkur//.
+    dialogueText: Seseorang menabrak baru Tono dari belakang hingga ia tersungkur.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -55,6 +61,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -66,13 +74,15 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 7744845136721301162, guid: f80da2d26cef09c44ba04fb52fb8ba6a, type: 3}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
     stageCommands:
     - action: 0
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-      position: 0
+      position: 1
       expression: a
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
@@ -81,13 +91,15 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
     stageCommands:
     - action: 0
       character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
-      position: 2
+      position: 3
       expression: a
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
@@ -97,6 +109,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -108,6 +122,8 @@ MonoBehaviour:
     isThought: 1
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -119,6 +135,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -131,13 +149,15 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
     stageCommands:
     - action: 0
       character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
-      position: 1
+      position: 4
       expression: a
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
@@ -146,6 +166,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -157,6 +179,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
@@ -168,6 +192,8 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
