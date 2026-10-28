@@ -1493,8 +1493,190 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExamMinigameManager
   examType: 0
-  hardQuestions: []
-  mediumQuestions: []
+  hardQuestions:
+  - questionText: "Turunan pertama dari fungsi f(x) = (2x\xB2 + 3)(x - 1) pada saat
+      x = 2 adalah..."
+    options:
+    - 11
+    - 15
+    - 19
+    - 21
+    correctAnswerIndex: 2
+  - questionText: 'Dalam sebuah kotak terdapat 5 bola merah dan 4 bola putih. Jika
+      diambil 3 bola sekaligus secara acak,
+
+      peluang terambilnya 2 bola merah
+      dan 1 bola putih adalah...'
+    options:
+    - ' 5/14'
+    - 10/21
+    - 15/28
+    - 20/42
+    correctAnswerIndex: 1
+  - questionText: 'Sebuah bola dijatuhkan dari ketinggian 12 meter dan memantul kembali
+      dengan ketinggian 2/3 dari
+
+      tinggi sebelumnya. Panjang seluruh lintasan
+      bola sampai berhenti adalah...'
+    options:
+    - 36 m
+    - 48 m
+    - 72 m
+    - 60 m
+    correctAnswerIndex: 3
+  - questionText: "Persamaan garis singgung kurva y = x\xB2 - 4x + 5 pada titik dengan
+      absis x = 3 adalah..."
+    options:
+    - y = 2x - 4
+    - y = 2x + 4
+    - y = -2x + 8
+    - y = 4x - 10
+    correctAnswerIndex: 0
+  - questionText: "Sisa pembagian polinomial P(x) = 2x\xB3 - 3x\xB2 + x + 6 oleh
+      (x - 2) adalah..."
+    options:
+    - 6
+    - 8
+    - 10
+    - 12
+    correctAnswerIndex: 3
+  - questionText: 'Perjanjian tahun 1667 antara VOC dan Kesultanan Banten maupun
+      Makassar serta pertukaran Pulau
+
+      Run dengan Manhattan (antara Belanda
+      dan Inggris) berkaitan erat dengan traktat...'
+    options:
+    - Perjanjian Giyanti
+    - Perjanjian Breda
+    - Perjanjian Tordesillas
+    - ' Perjanjian Saragossa'
+    correctAnswerIndex: 1
+  - questionText: Unsur kimia yang memiliki nomor atom 79 dan dilambangkan dengan
+      'Au' pada tabel periodik adalah...
+    options:
+    - ' Perak'
+    - Tembaga
+    - 'Emas '
+    - ' Besi'
+    correctAnswerIndex: 2
+  - questionText: Ketua Badan Penyelidik Usaha-Usaha Persiapan Kemerdekaan (BPUPKI)
+      adalah...
+    options:
+    - Dr. K.R.T. Radjiman Wedyodiningrat
+    - Drs. Moh. Hatta
+    - 'Mr. Soepomo '
+    - Mr. Muhammad Yamin
+    correctAnswerIndex: 0
+  - questionText: Cabang ilmu biologi yang mempelajari secara khusus tentang jamur
+      (fungi) adalah...
+    options:
+    - Virologi
+    - Bakteriologi
+    - Fikologi
+    - Mikologi
+    correctAnswerIndex: 3
+  - questionText: Gaya semu yang menyebabkan pembelokan arah angin dan arus laut
+      akibat rotasi Bumi disebut...
+    options:
+    - 'Efek Coriolis '
+    - Efek Tyndall
+    - Efek Doppler
+    - ' Gaya Sentripetal'
+    correctAnswerIndex: 0
+  mediumQuestions:
+  - questionText: Jika 2x + 3y = 12 dan x - y = 1, maka nilai dari x + y adalah...
+    options:
+    - 3
+    - 4
+    - 5
+    - 6
+    correctAnswerIndex: 2
+  - questionText: 'Suatu barisan aritmetika memiliki suku pertama (a) = 4 dan beda
+      (b) = 3. Suku ke-15 dari barisan
+
+      tersebut adalah...'
+    options:
+    - 43
+    - 46
+    - 45
+    - 49
+    correctAnswerIndex: 1
+  - questionText: 'Sebuah segitiga siku-siku memiliki panjang alas 9 cm dan tinggi
+      12 cm. Panjang sisi miringnya
+
+      (hipotenusa) adalah...'
+    options:
+    - 15 cm
+    - 16 cm
+    - 17 cm
+    - 18 cm
+    correctAnswerIndex: 0
+  - questionText: 'Suatu pekerjaan dapat diselesaikan oleh 12 orang dalam waktu 15
+      hari. Jika pekerjaan ingin
+
+      diselesaikan dalam 10 hari, total pekerja
+      yang dibutuhkan adalah...'
+    options:
+    - 15 orang
+    - 16 orang
+    - 17 orang
+    - 18 orang
+    correctAnswerIndex: 3
+  - questionText: 'Rata-rata nilai 4 siswa adalah 75. Jika nilai seorang siswa baru
+      digabungkan, rata-ratanya menjadi 78.
+
+      Nilai siswa baru tersebut adalah...'
+    options:
+    - 80
+    - 85
+    - 88
+    - 90
+    correctAnswerIndex: 3
+  - questionText: 'Organisasi Perhimpunan Bangsa-Bangsa Asia Tenggara (ASEAN) didirikan
+      pada tanggal 8 Agustus
+
+      1967 di kota...'
+    options:
+    - Jakarta
+    - Kuala Lumpur
+    - Bangkok
+    - Manila
+    correctAnswerIndex: 2
+  - questionText: 'Lapisan atmosfer Bumi yang berfungsi melindungi makhluk hidup
+      dari radiasi sinar ultraviolet (UV)
+
+      berlebih adalah...'
+    options:
+    - Troposfer
+    - ' Lapisan Ozon (Stratosfer)'
+    - Mesosfer
+    - Termosfer
+    correctAnswerIndex: 1
+  - questionText: Sungai terpanjang di dunia yang melintasi benua Afrika bagian timur
+      laut adalah...
+    options:
+    - Sungai Amazon
+    - Sungai Nil
+    - Sungai Yangtze
+    - Sungai Mississippi
+    correctAnswerIndex: 1
+  - questionText: Tokoh pengetik naskah Proklamasi Kemerdekaan Indonesia adalah...
+    options:
+    - Sayuti Meli
+    - Sukarni
+    - Achmad Soebardjo
+    - Latief Hendraningrat
+    correctAnswerIndex: 0
+  - questionText: 'Vitamin yang dapat diproduksi oleh tubuh manusia dengan bantuan
+      paparan sinar matahari pagi
+
+      adalah...'
+    options:
+    - Vitamin D
+    - Vitamin E
+    - Vitamin B12
+    - Vitamin A
+    correctAnswerIndex: 0
   easyQuestions:
   - questionText: "Hasil dari 125 + 75 \xD7 2 - 50 adalah"
     options:
