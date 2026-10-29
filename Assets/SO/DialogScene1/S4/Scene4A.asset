@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
+  m_Name: Scene4A
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  sceneId: S4A
+  sceneDescription: 
+  lines:
+  - character: {fileID: 0}
+    speakerNameOverride: Aris
+    dialogueText: Langsung ke intinya saja. Aku mendengar percakapanmu dengan Gita
+      di koridor tadi.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: (Glek.. dia tahu kejadian di koridor secepat ini?)
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: Aris
+    dialogueText: ' Lebih tepatnya, aku dapat laporan'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: Aris
+    dialogueText: Dan dari laporan yang kudapat, kamu memilih bersekutu dengan Gita
+      untuk bisnis busuk mereka di kantin.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: ...
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Aku cuma butuh jaminan agar Rico dan gengnya tidak menggangguku.
+      Gita menawarkan perlindungan itu.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: Aris
+    dialogueText: Memilih perlindungan dari sekelompok kriminal sekolah? Keputusan
+      yang sangat amat ceroboh, Tono.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: (Kamu juga tidak jauh dari kata kriminal, Aris)
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Maksudmu?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: Aris
+    dialogueText: Aku tadinya mau menawarkan perlindungan resmi dari OSIS. Tapi karena
+      kamu memilih bersekutu dengan faksi Kantin, aku tidak bisa membantumu lagi.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: Aris
+    dialogueText: "Jangan menyalahkanku kalau namamu terseret saat OSIS menertibkan
+      kalian nanti. Selamat menikmati \u2018perlindunganmu\u2019 "
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Fade out. Kedua sprite hilang
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: // Tono keluar dari ruangan OSIS.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Isi pikirannya bercampur aduk //
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: ( Entah mengapa, ancamannya terasa sangat menakutkan )
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: ( Apa aku telah membuat keputusan yang salah? )
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  nextDialogue: {fileID: 0}
+  conditionalNexts: []

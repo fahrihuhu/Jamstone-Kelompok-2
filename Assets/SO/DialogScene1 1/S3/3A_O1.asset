@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
+  m_Name: 3A_O1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  sceneId: 
+  sceneDescription: 
+  lines:
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Boleh... Tapi pastikan Rico dan anak buahnya enggak ada yang berani
+      macam-macam sama aku.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Deal. Nanti sore mampir ke kantin ya, Tono.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Fade out.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  nextDialogue: {fileID: 0}

@@ -1,0 +1,860 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
+  m_Name: Scene2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  sceneId: 2
+  sceneDescription: 
+  lines:
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: (Suara riuh murid kelas bercakap-cakap.)
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: 
+    dialogueText: 
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: a
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: ( Kelas ini masih sepi..)
+    isThought: 1
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: ( Padahal di lorong rame, sepertinya mereka sengaja telat masuk
+      )
+    isThought: 1
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: ( Eh.. Ada orang di pojokan )
+    isThought: 1
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Sprite Tono Hilang
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: a
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Tono berjalan ke meja pojok belakang. Disitu, duduk seorang anak
+      laki-laki berkacamata yang sedang menunduk membaca buku.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: ' Anu.. permisi, disini kosong ya? Boleh aku duduk disini?'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: ???
+    dialogueText: Eh.. B-boleh kok, silakan..
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: a
+    - action: 0
+      character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+      position: 3
+      expression: a
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Terima kasih. Namaku Tono.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Aku... Radit. Kamu... murid baru yang tadi di gerbang, kan?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Kamu lihat?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Kayaknya semua orang liat deh..
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Kau membuat keputusan tepat, lebih baik nggak macam macam dengan
+      Rico
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: rico_result
+    conditionValue: damai
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Iya, padahal aku belum 5 menit di sekolah ini tapi sudah dipalak
+      aja
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: rico_result
+    conditionValue: damai
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Jujur.. Kamu nekat banget. Kayaknya wajahmu sudah ditandai.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: rico_result
+    conditionValue: waspada
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Aku tahu, aku cuma nggak mau dicurangi seperti itu..
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: rico_result
+    conditionValue: waspada
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Lagipula.. Kenapa anak seperti Rico itu bisa sebebas itu di sekolah
+      ini?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Kamu nggak mungkin nggak tahu kan? Soal rumor sekolah ini?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Tahu sih.. Katanya, disini seperti penjara.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: 'Menghela nafas. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: 'Mungkin lebih buruk.. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Murid2 di sekolah ini terbagi menjadi banyak faksi.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Namun, hanya 3 faksi yang perlu kamu waspadai.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Pertama, Anak Ekskul Olahraga. Dipimpin sama Rico.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Mereka menguasai lapangan belakang sama koridor utama. Otot semua,
+      tapi otak nggak ada.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Semester lalu, ada anak yang lupa bawa uang makan untuk Rico. Anak-anak
+      Rico ngunci dia di dalam loker peralatan olahraga semalaman sampai dehidrasi
+      parah. Sekolah cuma nganggap itu 'kecelakaan bercandaan'.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Anak itu langsung keluar dari sekolah ini, tapi Rico dan anak buahnya
+      tidak ditindak apa apa.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: (Sialan... Rico benar-benar gapunya otak.)
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Kedua, Tongkrongan Kantin. Tempatnya si Gita.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Faksi terbesar di sini, dan mereka tidak punya pemimpin resmi.
+      Mereka pusatnya gosip, transaksi barang ilegal, rokok, sampai kunci jawaban.
+      Pokoknya apa pun yang dilarang sekolah, ada di sana.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Gita kelihatannya santai, tapi faksi dia separah itu?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Jangan tertipu sama mukanya, Tono. Bulan lalu ada anak yang buka
+      suara soal bisnis judi kartu mereka. Besoknya, beredar foto palsu kalau dia
+      lagi di klub malam bersama seorang waria.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Dia langsung cabut dan pindah sekolah karena nggak kuat menanggung
+      malu. seorang waria.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: "( Mereka sudah seperti mafia kecil\u2026 )"
+    isThought: 1
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Dan terakhir... yang paling berbahaya. OSIS.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Hah? Bukannya OSIS harusnya menertibkan hal-hal kayak gitu?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Tersenyum tipis.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Di bawah Aris, OSIS itu cuma kedok. Dari luar kelihatan rapi dan
+      disiplin, tapi di belakang... Aris itu dalang semuanya.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Maksudmu?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: 'Dulu, sempet ada anak yang nyoba ngelaporin kebusukan Aris. Tiba-tiba
+      di sistem absensi sekolah, catatan alpha anak itu diubah jadi 30 hari. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: 'Anak itu langsung dipanggil guru BK dan terancam dikeluarkan tanpa
+      diberi kesempatan membela diri. Semua bukti resminya rapi banget sampai guru-guru
+      percaya 100% sama Aris. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: 'Dia bisa mengubah data semudah itu? Bukankah harusnya ada guru
+      yang tahu kalau dia tidak bolos? '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: 'Aku tidak tahu soal itu.. Mungkin ada pihak guru yang ikut bersekongkol
+      dengan Aris. kalau dia tidak bolos? '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: 'Gila... Terus anak itu sekarang gimana? '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: 'Menghela napas berat '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: 'Ya terpaksa pindah sekolah sebelum surat DO-nya terbit. Orang
+      tuanya dipaksa percaya kalau anaknya bolos. Enggak ada yang berani ngebantu
+      karena takut bernasib sama. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: 'Aris itu anak emas sekolah. Nilainya hampir sempurna, tutur katanya
+      sopan di depan guru, dan dia dipercaya buat bantu ngurus berkas administrasi.  '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: '(Beda sama Rico yang main kekerasan dan ancaman, Aris ini mainnya
+      bersih.. itu bikin dia jauh lebih berbahaya.) '
+    isThought: 1
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Jadi kalau kita enggak gabung faksi mana pun..
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Kita cuma nunggu giliran buat dihancurin.. Selama 2 tahun belakang,
+      aku sering menjadi korban mereka.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Namun tidak separah itu karena aku selalu mengikuti kemauan mereka.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Bagaimana kamu bisa bertahan selama ini?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: 
+    dialogueText: 'SFX: Bel Sekolah'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: Radit
+    dialogueText: Bel udah bunyi, ayo duduk. Mereka akan segera masuk.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: 
+    dialogueText: Sprite Tono dan Radit hilang
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: 
+    dialogueText: 'Para murid murid pun berbondong2 masuk ke ruangan kelas, suasana
+      menjadi sangat berisik. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: 
+    dialogueText: 'Tono dan Radit duduk berdua di pojok, sembari menghindari kontak
+      mata dengan siapapun. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: 
+    dialogueText: Lalu, seorang guru masuk ke ruangan. Dalam hitungan detik, suasana
+      ruangan yang tadinya bising langsung berubah hening total. SFX hilang
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+    speakerNameOverride: 
+    dialogueText: Pelajaran pun dimulai. Namun, kata-kata Radit terus berputar di
+      pikiran Tono.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  nextDialogue: {fileID: 11400000, guid: 925a81fec983d2144acda295e320f701, type: 2}
+  conditionalNexts:
+  - conditionKey: rico_result
+    conditionValue: waspada
+    nextDialogue: {fileID: 11400000, guid: 4edee7c51adbfd54591b8d3c47b3dd2c, type: 2}

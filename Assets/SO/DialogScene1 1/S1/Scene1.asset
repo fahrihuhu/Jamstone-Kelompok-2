@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
+  m_Name: Scene1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  sceneId: 1
+  sceneDescription: 
+  lines:
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: ("Cuma perlu bertahan setahun. Jangan cari masalah, jaga nilai
+      tetap sempurna, dan lulus..")
+    isThought: 1
+    expression: 
+    backgroundOverride: {fileID: 3603805097988156399, guid: 77dc3ab270ef1b74b948bcf4b27b3bfb, type: 3}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: (BRUKKK...)
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 2063826154672905881, guid: a99f48091e762f0489a2f7fb08fad1b7, type: 3}
+    sfxClip: {fileID: 8300000, guid: 79e50eb1bb147cc459860898df6938f5, type: 3}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: .
+    dialogueText: Seseorang menabrak baru Tono dari belakang hingga ia tersungkur.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: ???
+    dialogueText: Jangan berdiri di tengah jalan, bangsat!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: M-maaf bang..
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 7744845136721301162, guid: f80da2d26cef09c44ba04fb52fb8ba6a, type: 3}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: a
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: ???
+    dialogueText: Loh, anak baru ya?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: a
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: ???
+    dialogueText: Hahaha! Karena lu masih baru disini, lu harus bayar uang tol dulu
+      baru boleh masuk!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: (Sialan.. Padahal baru 2 menit aku disini)
+    isThought: 1
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: sfx
+    dialogueText: 'SFX: Langkah kaki lain mendekat. Gita muncul di layar'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: ???
+    dialogueText: Elah, Rico. Pagi-pagi udah malak anak orang aja. Lagi gaada duit
+      buat beli rokok?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 4
+      expression: a
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Diem lu, Gita! Kagak usah ikut campur urusan gua!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Santai aja kali! Masih pagi juga.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Yaudah. Sini duit lu, mata empat!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices:
+    - choiceText: 'OPSI 1: Berikan Rico Uang'
+      nextDialogue: {fileID: 11400000, guid: cd20228bde53fd04fa1b647c7b1ee2e9, type: 2}
+      nextLineIndex: -1
+      setFlagKey: rico_result
+      setFlagValue: damai
+    - choiceText: 'OPSI 2: Kabur '
+      nextDialogue: {fileID: 11400000, guid: 21e5854bd586ac140954733c198d6850, type: 2}
+      nextLineIndex: -1
+      setFlagKey: rico_result
+      setFlagValue: waspada
+    - choiceText: 'OPSI 3: Lawan '
+      nextDialogue: {fileID: 11400000, guid: b49e00db5b817e84090cf698e54d6931, type: 2}
+      nextLineIndex: -1
+      setFlagKey: rico_result
+      setFlagValue: waspada
+  nextDialogue: {fileID: 0}
+  conditionalNexts: []

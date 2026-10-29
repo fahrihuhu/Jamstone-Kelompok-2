@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
+  m_Name: Scene3A
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  sceneId: S3A
+  sceneDescription: 
+  lines:
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'Layar menampilkan background Koridor SMA Garuda. SFX: Suara riuh
+      murid di koridor.'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: '// Pengumuman hasil ulangan harian resmi ditempel. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Nama "TONO" merangkak naik ke posisi puncak, mengalahkan seluruh
+      siswa di angkatannya dengan nilai sempurna, tanpa kertas contekan..
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: ' Dalam sekejap, status Tono berubah dari anak baru tak dikenal
+      menjadi sorotan utama. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Terdengar bisikan dari para murid lain, menyinggung soal nilai
+      Tono yang mengalahkan nilai Aris //
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'Sprite Rico muncul '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: 'Woy, Mata Empat! Lu pinter juga ternyata! '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: 'Gua minta maaf soal kemaren ya! Gua kebawa emosi sih soalnya,
+      hahaha!
+
+'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: M-maksudmu apa, Rico?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Gua kagak suka basa-basi. Mumpung lu pinter, gua ada penawaran
+      spesial buat lu!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Gua bisa pastiin gaada orang yang berani nyentuh lu di koridor
+      ini, tapi lu harus ngerjain semua tugas dan PR gua.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Aku enggak mau. Aku ke sini buat belajar sendiri, bukan jadi joki
+      kalian.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Lu... berani nolak gua, Mata Empat?!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Sprite Gita muncul menyela dari arah kanan
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Elah, Ric! Lo pikir anak kayak dia mau disuruh-suruh cuma demi
+      'jaminan aman' kagak jelas dari lo?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Diem lu, Gita! Kagak usah ikut campur mulu!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Bodo amat.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: // Rico terdiam sesaat, dan kemudian dia membatalkan penawarannya
+      untuk Tono.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Cih... Awas lu ya, Mata Empat!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Sprite Rico hilang. Gita kini menatap Tono dengan senyum tipis.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Makasih ya, Gita.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Lo pikir gua ngelakuin ini tanpa alasan?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Lagian, orang kayak lo emang harusnya butuh bekingan biar bisa
+      selamat disini!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Terus kamu mau minta apa dari aku?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: 'Gua beda sama Rico. Gua menawarkan bisnis. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'Lo tau, selama ini kertas contekan yang kami buat gapernah seluruhnya
+      benar.
+
+'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Lo bantu bikin kunci jawaban dari bocoran soal yang kami curi,
+      terus gua jual ke anak-anak lain. Lu dapet bagian keuntungan, plus jaminan
+      perlindungan penuh dari teman-teman gua. Gimana?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices:
+    - choiceText: '[ Menerima Tawaran Gita ] (Membantu bisnis sontekan Kantin)'
+      nextDialogue: {fileID: 11400000, guid: bd6caa9be3bc0b946b9d6d24650ee6eb, type: 2}
+      nextLineIndex: 0
+      setFlagKey: gita_bantu
+      setFlagValue: bantu
+    - choiceText: '[ Menolak Tawaran Gita ] (Menolak terlibat bisnis ilegal)'
+      nextDialogue: {fileID: 11400000, guid: 6277d2447824c0e47a558bbbee606665, type: 2}
+      nextLineIndex: 0
+      setFlagKey: gita_tolak
+      setFlagValue: tolak
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    choices: []
+  nextDialogue: {fileID: 0}
