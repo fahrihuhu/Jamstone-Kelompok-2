@@ -21,8 +21,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -30,8 +34,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -39,8 +47,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -48,8 +60,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -57,8 +73,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -66,7 +86,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: Kejar
+    stageCommands: []
     choices: []
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: 925a81fec983d2144acda295e320f701, type: 2}
+  conditionalNexts: []

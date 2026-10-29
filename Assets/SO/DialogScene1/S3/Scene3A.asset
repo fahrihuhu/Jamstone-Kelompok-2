@@ -22,8 +22,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -31,8 +35,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -41,8 +49,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -51,8 +63,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -61,8 +77,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -70,8 +90,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -79,8 +103,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -91,8 +119,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
-    conditionKey: 
-    conditionValue: 
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: rico_result
+    conditionValue: waspada
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -100,8 +132,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -110,8 +146,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -120,8 +160,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -130,8 +174,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -139,8 +187,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -148,8 +200,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -158,8 +214,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -167,8 +227,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -176,8 +240,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -186,8 +254,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -195,8 +267,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -204,8 +280,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -213,8 +293,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -222,8 +306,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -232,8 +320,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -241,8 +333,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -250,8 +346,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -262,8 +362,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -273,8 +377,12 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices:
     - choiceText: '[ Menerima Tawaran Gita ] (Membantu bisnis sontekan Kantin)'
       nextDialogue: {fileID: 11400000, guid: bd6caa9be3bc0b946b9d6d24650ee6eb, type: 2}
@@ -292,7 +400,35 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
     conditionKey: 
     conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices:
+    - choiceText: 
+      nextDialogue: {fileID: 11400000, guid: bd6caa9be3bc0b946b9d6d24650ee6eb, type: 2}
+      nextLineIndex: 0
+      setFlagKey: gita_offer
+      setFlagValue: menerima
+    - choiceText: 
+      nextDialogue: {fileID: 11400000, guid: 6277d2447824c0e47a558bbbee606665, type: 2}
+      nextLineIndex: 0
+      setFlagKey: gita_offer
+      setFlagValue: menolak
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
     choices: []
   nextDialogue: {fileID: 0}
+  conditionalNexts: []

@@ -158,7 +158,7 @@ public class GameManager : MonoBehaviour
     public void OnAdvanceClicked()
     {
         // Teks belum selesai dimuat: klik diabaikan, tidak bisa skip
-        if (isTyping) return;
+        //if (isTyping) return;
 
         // Baris dengan pilihan: pemain harus memilih lewat tombol, bukan next
         if (currentDialogue.lines[currentIndex].choices != null &&

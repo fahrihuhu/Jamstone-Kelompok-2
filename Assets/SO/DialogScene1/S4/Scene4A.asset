@@ -24,8 +24,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
     sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
+    conditionKey: gita_offer
+    conditionValue: menerima
     minigameSceneName: 
     stageCommands: []
     choices: []
