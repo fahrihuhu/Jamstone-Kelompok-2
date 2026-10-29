@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
+  m_Name: Scene1A
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  sceneId: S1A
+  sceneDescription: 'OPSI 1: Berikan Rico Uang'
+  lines:
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Ini..
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Cuma 50 ribu? Yang bener aja!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Udahlah, Ric! Lumayan bisa buat beli rokok.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Iya ya, hahaha! Lu selamat hari ini!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: (Mereka pun pergi meninggalkan TONO)
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: "Siall\u2026"
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: a
+    - action: 1
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 4
+      expression: a
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: a
+    choices: []
+  nextDialogue: {fileID: 11400000, guid: c9d30e560e51b3849900fc464611a60b, type: 2}
+  conditionalNexts: []
