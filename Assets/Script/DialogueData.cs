@@ -12,6 +12,10 @@ public class DialogueData : ScriptableObject
     [Header("Isi Dialog")]
     public DialogueLine[] lines;
 
+    [Header("Transisi Scene")]
+    [Tooltip("Centang jika perpindahan ke scene/DialogueData ini menggunakan efek Fade (layar hitam)")]
+    public bool fadeTransition;
+
     [Header("Lanjutan Otomatis (opsional)")]
     [Tooltip("Kalau semua baris sudah habis, otomatis lanjut ke dialog ini. Kosongkan kalau scene ini berakhir lewat pilihan, atau memang akhir cerita.")]
     public DialogueData nextDialogue;
@@ -73,6 +77,7 @@ public class DialogueLine
     [Header("Isi Dialog")]
     [TextArea(2, 5)]
     public string dialogueText;
+    
 
     [Tooltip("Centang kalau ini inner thought/monolog batin (biasanya ditulis dalam kurung), untuk ditampilkan beda gaya di UI")]
     public bool isThought = false;

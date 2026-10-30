@@ -36,7 +36,8 @@ public class ExamMinigameManager : MonoBehaviour
     public ExamQuestion[] easyQuestions;
 
     [Header("Pengaturan Nilai")]
-    public float passingScore = 80f; // Nilai kelulusan (> 80)
+    [Tooltip("Nilai minimal untuk lulus. Nilai SAMA DENGAN angka ini sudah dihitung lulus")]
+    public float passingScore = 80f;
 
     [Header("UI Reference")]
     public TextMeshProUGUI timerText;
@@ -79,7 +80,7 @@ public class ExamMinigameManager : MonoBehaviour
 
     private void SelectQuestionBankByIntelligence()
     {
-        int intel = 8; // Default fallback jika StateManager belum terhubung
+        int intel = 8; // Default fallback jika StateManager belum terhubung (tes langsung dari scene ujian)
 
         if (StateManager.Instance != null)
         {
@@ -101,6 +102,18 @@ public class ExamMinigameManager : MonoBehaviour
         {
             activeQuestions = easyQuestions;
             Debug.Log($"[Exam] Intelligence Tono ({intel}): Menggunakan Soal MUDAH.");
+        }
+
+        // Fallback: kalau bank untuk tingkat ini kosong, pakai bank lain yang terisi
+        // supaya pemain tidak otomatis gagal dan kena pengurangan stat.
+        if (activeQuestions == null || activeQuestions.Length == 0)
+        {
+            Debug.LogWarning("[Exam] Bank soal untuk tingkat ini kosong, memakai bank lain yang terisi.");
+
+            if (mediumQuestions != null && mediumQuestions.Length > 0) activeQuestions = mediumQuestions;
+            else if (easyQuestions != null && easyQuestions.Length > 0) activeQuestions = easyQuestions;
+            else if (hardQuestions != null && hardQuestions.Length > 0) activeQuestions = hardQuestions;
+            else Debug.LogError("[Exam] Semua bank soal kosong! Isi minimal satu bank di Inspector.");
         }
     }
 
@@ -176,6 +189,7 @@ public class ExamMinigameManager : MonoBehaviour
     public void OnAnswerSelected(int selectedIndex)
     {
         if (!isGameActive) return;
+        if (activeQuestions == null || currentQuestionIndex >= activeQuestions.Length) return;
 
         if (selectedIndex == activeQuestions[currentQuestionIndex].correctAnswerIndex)
             correctAnswersCount++;
@@ -186,13 +200,15 @@ public class ExamMinigameManager : MonoBehaviour
 
     private void EndExam()
     {
+        if (!isGameActive) return; // cegah terpanggil dua kali
         isGameActive = false;
 
-        float finalScore = (activeQuestions != null && activeQuestions.Length > 0) 
-            ? ((float)correctAnswersCount / activeQuestions.Length) * 100f 
+        float finalScore = (activeQuestions != null && activeQuestions.Length > 0)
+            ? ((float)correctAnswersCount / activeQuestions.Length) * 100f
             : 0f;
-            
-        bool isPassed = finalScore > passingScore;
+
+        // Nilai sama dengan passingScore dihitung lulus
+        bool isPassed = finalScore >= passingScore;
 
         StartCoroutine(FinishSequence(isPassed, finalScore));
     }
@@ -232,7 +248,13 @@ public class ExamMinigameManager : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.ReportMinigameResult(isPassed);
+            // Hasil dibaca dialog lewat flag minigame_result = "lulus" / "gagal"
+            GameManager.Instance.ReportMinigameResult(isPassed, "lulus", "gagal");
+        }
+        else
+        {
+            // Dites langsung dari scene ujian
+            Debug.Log($"[Exam] Hasil ujian: {(isPassed ? "lulus" : "gagal")} (nilai {finalScore:F0}). GameManager tidak ditemukan.");
         }
     }
 }
