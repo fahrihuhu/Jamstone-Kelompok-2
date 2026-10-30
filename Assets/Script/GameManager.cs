@@ -33,6 +33,18 @@ public class GameManager : MonoBehaviour
     public GameObject choicePanel;
     public Button choiceButtonPrefab;
 
+    [Header("Teks")]
+    [Tooltip("Jeda per huruf (detik). Set 0 supaya teks langsung muncul (berguna untuk tes)")]
+    public float typeDelay = 0.02f;
+
+    [Header("Transisi Antar Scene (Fade)")]
+    [Tooltip("CanvasGroup pada Image hitam penuh layar di dalam Vn Canvas. Kosongkan untuk mematikan fade")]
+    public CanvasGroup fadeOverlay;
+    [Tooltip("Durasi fade out, dan juga fade in (detik)")]
+    public float fadeDuration = 0.5f;
+    [Tooltip("Lama layar tetap gelap sebelum scene berikutnya muncul (detik)")]
+    public float blackHoldDuration = 0.3f;
+
     [Header("Minigame")]
     [Tooltip("Root Canvas VN, disembunyikan selama minigame berjalan")]
     public GameObject vnCanvas;
@@ -40,11 +52,17 @@ public class GameManager : MonoBehaviour
     // Akses cepat dari scene minigame: GameManager.Instance.ReportMinigameResult(...)
     public static GameManager Instance { get; private set; }
     private string minigameResult = null;
+    private bool inMinigame = false;
+    private bool isTransitioning = false;
+    private Coroutine choicesCoroutine;
 
     // State saat ini
     private DialogueData currentDialogue;
     private int currentIndex;
     private bool isTyping;
+    private Coroutine typingCoroutine;
+    private string currentFullText = "";
+    private bool currentHasChoices;
     private List<GameObject> spawnedChoiceButtons = new List<GameObject>();
 
     // Story flags: "ingatan" pilihan pemain, bertahan sepanjang playthrough (dan ikut ke-save)
@@ -97,7 +115,7 @@ public class GameManager : MonoBehaviour
         // Baris pemicu minigame: buka minigame, teks baris ini tidak ditampilkan
         if (!string.IsNullOrEmpty(line.minigameSceneName))
         {
-            StopAllCoroutines();
+            StopTextRoutines();
             StartCoroutine(RunMinigame(line.minigameSceneName));
             return;
         }
@@ -126,11 +144,13 @@ public class GameManager : MonoBehaviour
 
         bool hasChoices = line.choices != null && line.choices.Length > 0;
 
-        StopAllCoroutines();
-        StartCoroutine(TypeText(line.dialogueText, hasChoices));
+        StopTextRoutines();
+        currentFullText = line.dialogueText;
+        currentHasChoices = hasChoices;
+        typingCoroutine = StartCoroutine(TypeText(line.dialogueText, hasChoices));
 
         if (hasChoices)
-            StartCoroutine(ShowChoicesAfterTyping(line.choices));
+            choicesCoroutine = StartCoroutine(ShowChoicesAfterTyping(line.choices));
     }
 
     private IEnumerator TypeText(string text, bool hasChoices)
@@ -140,9 +160,11 @@ public class GameManager : MonoBehaviour
         foreach (char c in text)
         {
             dialogueText.text += c;
-            yield return new WaitForSeconds(0.02f);
+            if (typeDelay > 0f)
+                yield return new WaitForSeconds(typeDelay);
         }
         isTyping = false;
+        typingCoroutine = null;
 
         // Teks sudah utuh: tampilkan indikator (kecuali baris ini punya pilihan)
         if (!hasChoices)
@@ -157,8 +179,22 @@ public class GameManager : MonoBehaviour
 
     public void OnAdvanceClicked()
     {
-        // Teks belum selesai dimuat: klik diabaikan, tidak bisa skip
-        //if (isTyping) return;
+        // Selama minigame berjalan, klik dari VN diabaikan
+        if (inMinigame || isTransitioning) return;
+
+        // Tidak ada dialog yang sedang berjalan
+        if (currentDialogue == null || currentIndex >= currentDialogue.lines.Length) return;
+
+        // Teks masih diketik: klik langsung menampilkan teks penuh
+        if (isTyping)
+        {
+            if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+            typingCoroutine = null;
+            dialogueText.text = currentFullText;
+            isTyping = false;
+            if (!currentHasChoices) SetIndicator(true);
+            return;
+        }
 
         // Baris dengan pilihan: pemain harus memilih lewat tombol, bukan next
         if (currentDialogue.lines[currentIndex].choices != null &&
@@ -196,7 +232,7 @@ public class GameManager : MonoBehaviour
         if (choice.nextDialogue != null)
         {
             int startAt = choice.nextLineIndex >= 0 ? choice.nextLineIndex : 0;
-            StartDialogue(choice.nextDialogue, startAt);
+            GoToDialogue(choice.nextDialogue, startAt);
         }
         else if (choice.nextLineIndex >= 0)
         {
@@ -230,7 +266,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (cn.nextDialogue != null && GetFlag(cn.conditionKey) == cn.conditionValue)
                     {
-                        StartDialogue(cn.nextDialogue, 0);
+                        GoToDialogue(cn.nextDialogue, 0);
                         return;
                     }
                 }
@@ -239,7 +275,7 @@ public class GameManager : MonoBehaviour
             // 2. Kalau tidak ada yang cocok, pakai lanjutan biasa
             if (currentDialogue.nextDialogue != null)
             {
-                StartDialogue(currentDialogue.nextDialogue, 0);
+                GoToDialogue(currentDialogue.nextDialogue, 0);
                 return;
             }
         }
@@ -249,10 +285,59 @@ public class GameManager : MonoBehaviour
         dialogueBox.SetActive(false);
     }
 
+    // ================= TRANSISI ANTAR SCENE =================
+
+    // Hentikan hanya coroutine teks dan pilihan. StopAllCoroutines() tidak dipakai
+    // karena akan ikut mematikan fade dan minigame yang sedang berjalan.
+    private void StopTextRoutines()
+    {
+        if (typingCoroutine != null) { StopCoroutine(typingCoroutine); typingCoroutine = null; }
+        if (choicesCoroutine != null) { StopCoroutine(choicesCoroutine); choicesCoroutine = null; }
+        isTyping = false;
+    }
+
+    // Pindah ke DialogueData lain. Fade hanya dipakai kalau DialogueData tujuan
+    // mencentang "Fade Transition" (artinya itu scene baru, bukan lanjutan 1 -> 1A).
+    private void GoToDialogue(DialogueData next, int startAt)
+    {
+        if (next.fadeTransition && fadeOverlay != null)
+            StartCoroutine(TransitionToDialogue(next, startAt));
+        else
+            StartDialogue(next, startAt);
+    }
+
+    private IEnumerator TransitionToDialogue(DialogueData next, int startAt)
+    {
+        isTransitioning = true;
+
+        yield return Fade(0f, 1f);                              // fade out ke hitam
+        yield return new WaitForSecondsRealtime(blackHoldDuration);
+
+        StartDialogue(next, startAt);                           // ganti karakter/background saat layar gelap
+
+        yield return Fade(1f, 0f);                              // fade in
+        isTransitioning = false;
+    }
+
+    private IEnumerator Fade(float from, float to)
+    {
+        fadeOverlay.blocksRaycasts = true; // klik tidak tembus selama fade
+        float t = 0f;
+        while (t < fadeDuration)
+        {
+            t += Time.unscaledDeltaTime;
+            fadeOverlay.alpha = Mathf.Lerp(from, to, t / fadeDuration);
+            yield return null;
+        }
+        fadeOverlay.alpha = to;
+        fadeOverlay.blocksRaycasts = to > 0f;
+    }
+
     // ================= MINIGAME =================
 
     private IEnumerator RunMinigame(string sceneName)
     {
+        inMinigame = true;
         minigameResult = null;
         if (vnCanvas != null) vnCanvas.SetActive(false);
 
@@ -263,21 +348,25 @@ public class GameManager : MonoBehaviour
         while (minigameResult == null)
             yield return null;
 
+        // Hasil disimpan sebagai flag, dipakai untuk percabangan dialog
         SetFlag("minigame_result", minigameResult);
 
         yield return SceneManager.UnloadSceneAsync(sceneName);
 
         if (vnCanvas != null) vnCanvas.SetActive(true);
+        inMinigame = false;
 
         // Lanjut ke baris setelah titik minigame
         currentIndex++;
         ShowLine();
     }
 
-    // Dipanggil oleh script di scene minigame saat permainan selesai
-    public void ReportMinigameResult(bool won)
+    // Dipanggil oleh script di scene minigame saat permainan selesai.
+    // Nilai default untuk minigame kejar-kejaran; minigame lain bisa memakai nilai sendiri,
+    // misalnya ReportMinigameResult(lulus, "lulus", "gagal").
+    public void ReportMinigameResult(bool won, string winValue = "lolos", string loseValue = "tertangkap")
     {
-        minigameResult = won ? "lolos" : "tertangkap";
+        minigameResult = won ? winValue : loseValue;
     }
 
     // ================= STORY FLAGS =================
