@@ -853,6 +853,7 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
+  fadeTransition: 1
   nextDialogue: {fileID: 11400000, guid: 925a81fec983d2144acda295e320f701, type: 2}
   conditionalNexts:
   - conditionKey: rico_result
