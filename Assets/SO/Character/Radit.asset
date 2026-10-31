@@ -15,5 +15,11 @@ MonoBehaviour:
   characterName: Radit
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   expressions:
-  - expressionName: a
-    sprite: {fileID: 3175250354601194271, guid: 28a6afb0f7d51884c92f1e5ea879dfee, type: 3}
+  - expressionName: Marah
+    sprite: {fileID: -6877186551248797173, guid: 767b1c5e55ba8b847b528d97addf479b, type: 3}
+  - expressionName: Netral
+    sprite: {fileID: -3100122568087841899, guid: 599cd448c2a0e0f4e97b757fb47602e8, type: 3}
+  - expressionName: 'Panik, fristasi, cemas '
+    sprite: {fileID: -3537469892639989669, guid: 4a47347b4b83d284d9f233a6e404a334, type: 3}
+  - expressionName: Senyum
+    sprite: {fileID: 4988740294627585407, guid: 727f432e15cab4745918fc8e3a31369f, type: 3}

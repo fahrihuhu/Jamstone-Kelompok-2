@@ -15,5 +15,11 @@ MonoBehaviour:
   characterName: Rico
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   expressions:
-  - expressionName: a
-    sprite: {fileID: 475899931840480484, guid: 4938006dec8b8d940ae21c970e911b6b, type: 3}
+  - expressionName: netral
+    sprite: {fileID: -7066406888977520529, guid: a55ec7fc769b04b4d8d91ebe89cbf149, type: 3}
+  - expressionName: senyum
+    sprite: {fileID: 1007613591737428389, guid: 80df4bea38eb8794ca27945a11e4e848, type: 3}
+  - expressionName: marah
+    sprite: {fileID: 8028338105080620678, guid: 96e5ba22c09c2574489b718bdf3865a8, type: 3}
+  - expressionName: cemas
+    sprite: {fileID: -7830758025729592541, guid: d2813be702acd694fa3e8d547a934aa9, type: 3}

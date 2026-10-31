@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0498e0a3627ba69438ccf52d78ad78d9
+guid: 599cd448c2a0e0f4e97b757fb47602e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2573873144176903071
-    second: Female Sprite by Sutemo_20261024202236_0
+      213: -3100122568087841899
+    second: adit_neutral_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Female Sprite by Sutemo_20261024202236_0
+      name: adit_neutral_0
       rect:
         serializedVersion: 2
-        x: 182
-        y: 0
-        width: 629
-        height: 978
+        x: 347
+        y: 83
+        width: 703
+        height: 1767
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f930597dcfb38b320800000000000000
-      internalID: 2573873144176903071
+      spriteID: 593d3f013f62af4d0800000000000000
+      internalID: -3100122568087841899
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Female Sprite by Sutemo_20261024202236_0: 2573873144176903071
+      adit_neutral_0: -3100122568087841899
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

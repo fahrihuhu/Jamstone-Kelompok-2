@@ -15,5 +15,11 @@ MonoBehaviour:
   characterName: Gita
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   expressions:
-  - expressionName: a
-    sprite: {fileID: 2573873144176903071, guid: 0498e0a3627ba69438ccf52d78ad78d9, type: 3}
+  - expressionName: netral
+    sprite: {fileID: 7781202394294830402, guid: f1f87c7e80bc15645a925326e02e953c, type: 3}
+  - expressionName: marah
+    sprite: {fileID: 8416243949045666254, guid: fab38da2cb84026479673a346c958215, type: 3}
+  - expressionName: Senyum
+    sprite: {fileID: -6950486346419376927, guid: ed296dc74393ef948a05a943b9fb943a, type: 3}
+  - expressionName: Cemas / Gelisah?
+    sprite: {fileID: 1302723820812287101, guid: d9d0680364d7e3247916af26197105c8, type: 3}

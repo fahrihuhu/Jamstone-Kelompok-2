@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -16,8 +15,8 @@ public class ExamQuestion
 {
     [TextArea(2, 4)]
     public string questionText;
-    public string[] options = new string[4]; // 4 Pilihan Jawaban (A, B, C, D)
-    public int correctAnswerIndex;           // Index jawaban benar (0=A, 1=B, 2=C, 3=D)
+    public string[] options = new string[4];
+    public int correctAnswerIndex;
 }
 
 public class ExamMinigameManager : MonoBehaviour
@@ -26,17 +25,11 @@ public class ExamMinigameManager : MonoBehaviour
     public ExamType examType = ExamType.UH;
 
     [Header("Bank Soal Berdasarkan Tingkat Kesulitan")]
-    [Tooltip("Daftar soal kategori SUSAH (Digunakan jika Intelligence Tono 1 - 4)")]
     public ExamQuestion[] hardQuestions;
-
-    [Tooltip("Daftar soal kategori SEDANG (Digunakan jika Intelligence Tono 5 - 7)")]
     public ExamQuestion[] mediumQuestions;
-
-    [Tooltip("Daftar soal kategori MUDAH (Digunakan jika Intelligence Tono 8 - 10)")]
     public ExamQuestion[] easyQuestions;
 
     [Header("Pengaturan Nilai")]
-    [Tooltip("Nilai minimal untuk lulus. Nilai SAMA DENGAN angka ini sudah dihitung lulus")]
     public float passingScore = 80f;
 
     [Header("UI Reference")]
@@ -46,12 +39,16 @@ public class ExamMinigameManager : MonoBehaviour
     public Button[] optionButtons;
     public TextMeshProUGUI[] optionTexts;
 
+    [Header("UI Tutorial (Pop-up Awal)")]
+    public GameObject tutorialPanel;
+    public Button startExamButton;
+
     [Header("Result UI (Opsional)")]
     public GameObject resultPanel;
     public TextMeshProUGUI resultStatusText;
     public TextMeshProUGUI finalScoreText;
 
-    private ExamQuestion[] activeQuestions; // Array soal yang akhirnya dipakai
+    private ExamQuestion[] activeQuestions;
     private int currentQuestionIndex = 0;
     private int correctAnswersCount = 0;
     private float totalTime;
@@ -60,61 +57,27 @@ public class ExamMinigameManager : MonoBehaviour
 
     private void Awake()
     {
-        // 1. Atur batas waktu berdasarkan Tipe Ujian
         switch (examType)
         {
-            case ExamType.UH:
-                totalTime = 60f;
-                break;
-            case ExamType.UTS:
-                totalTime = 75f;
-                break;
-            case ExamType.UAS:
-                totalTime = 90f;
-                break;
+            case ExamType.UH: totalTime = 60f; break;
+            case ExamType.UTS: totalTime = 75f; break;
+            case ExamType.UAS: totalTime = 90f; break;
         }
 
-        // 2. Tentukan Bank Soal berdasarkan Intelligence Tono dari StateManager
         SelectQuestionBankByIntelligence();
     }
 
     private void SelectQuestionBankByIntelligence()
     {
-        int intel = 8; // Default fallback jika StateManager belum terhubung (tes langsung dari scene ujian)
-
+        int intel = 8;
         if (StateManager.Instance != null)
         {
             intel = StateManager.Instance.intelligence;
         }
 
-        // Penentuan Kategori Soal berdasarkan Range Intelligence
-        if (intel <= 4)
-        {
-            activeQuestions = hardQuestions;
-            Debug.Log($"[Exam] Intelligence Tono ({intel}): Menggunakan Soal SUSAH.");
-        }
-        else if (intel <= 7)
-        {
-            activeQuestions = mediumQuestions;
-            Debug.Log($"[Exam] Intelligence Tono ({intel}): Menggunakan Soal SEDANG.");
-        }
-        else
-        {
-            activeQuestions = easyQuestions;
-            Debug.Log($"[Exam] Intelligence Tono ({intel}): Menggunakan Soal MUDAH.");
-        }
-
-        // Fallback: kalau bank untuk tingkat ini kosong, pakai bank lain yang terisi
-        // supaya pemain tidak otomatis gagal dan kena pengurangan stat.
-        if (activeQuestions == null || activeQuestions.Length == 0)
-        {
-            Debug.LogWarning("[Exam] Bank soal untuk tingkat ini kosong, memakai bank lain yang terisi.");
-
-            if (mediumQuestions != null && mediumQuestions.Length > 0) activeQuestions = mediumQuestions;
-            else if (easyQuestions != null && easyQuestions.Length > 0) activeQuestions = easyQuestions;
-            else if (hardQuestions != null && hardQuestions.Length > 0) activeQuestions = hardQuestions;
-            else Debug.LogError("[Exam] Semua bank soal kosong! Isi minimal satu bank di Inspector.");
-        }
+        if (intel <= 4) activeQuestions = hardQuestions;
+        else if (intel <= 7) activeQuestions = mediumQuestions;
+        else activeQuestions = easyQuestions;
     }
 
     private void Start()
@@ -122,9 +85,34 @@ public class ExamMinigameManager : MonoBehaviour
         timeRemaining = totalTime;
         currentQuestionIndex = 0;
         correctAnswersCount = 0;
-        isGameActive = true;
+        isGameActive = false; // Belum mulai sebelum tombol Start diklik
 
         if (resultPanel != null) resultPanel.SetActive(false);
+
+        // Setup Pop-up Tutorial Awal
+        if (tutorialPanel != null)
+        {
+            tutorialPanel.SetActive(true);
+            if (startExamButton != null)
+            {
+                startExamButton.onClick.RemoveAllListeners();
+                startExamButton.onClick.AddListener(StartExam);
+            }
+        }
+        else
+        {
+            // Jika tutorialPanel tidak diisi, langsung mulai game
+            StartExam();
+        }
+    }
+
+    // Dipanggil saat tombol "MULAI UJIAN" diklik
+    public void StartExam()
+    {
+        if (tutorialPanel != null)
+            tutorialPanel.SetActive(false);
+
+        isGameActive = true;
         ShowQuestion();
     }
 
@@ -189,7 +177,6 @@ public class ExamMinigameManager : MonoBehaviour
     public void OnAnswerSelected(int selectedIndex)
     {
         if (!isGameActive) return;
-        if (activeQuestions == null || currentQuestionIndex >= activeQuestions.Length) return;
 
         if (selectedIndex == activeQuestions[currentQuestionIndex].correctAnswerIndex)
             correctAnswersCount++;
@@ -200,15 +187,13 @@ public class ExamMinigameManager : MonoBehaviour
 
     private void EndExam()
     {
-        if (!isGameActive) return; // cegah terpanggil dua kali
         isGameActive = false;
 
         float finalScore = (activeQuestions != null && activeQuestions.Length > 0)
             ? ((float)correctAnswersCount / activeQuestions.Length) * 100f
             : 0f;
 
-        // Nilai sama dengan passingScore dihitung lulus
-        bool isPassed = finalScore >= passingScore;
+        bool isPassed = finalScore > passingScore;
 
         StartCoroutine(FinishSequence(isPassed, finalScore));
     }
@@ -230,7 +215,6 @@ public class ExamMinigameManager : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
 
-        // Update Stat Tono
         if (StateManager.Instance != null)
         {
             if (isPassed)
@@ -248,13 +232,7 @@ public class ExamMinigameManager : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
-            // Hasil dibaca dialog lewat flag minigame_result = "lulus" / "gagal"
-            GameManager.Instance.ReportMinigameResult(isPassed, "lulus", "gagal");
-        }
-        else
-        {
-            // Dites langsung dari scene ujian
-            Debug.Log($"[Exam] Hasil ujian: {(isPassed ? "lulus" : "gagal")} (nilai {finalScore:F0}). GameManager tidak ditemukan.");
+            GameManager.Instance.ReportMinigameResult(isPassed);
         }
     }
 }

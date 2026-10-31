@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 96e5ba22c09c2574489b718bdf3865a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8028338105080620678
+    second: Rico_neutral_(jutek) 1_0
+  - first:
+      213: 7289027627149298518
+    second: Rico_neutral_(jutek) 1_1
+  - first:
+      213: 5938821394114372941
+    second: Rico_neutral_(jutek) 1_2
+  - first:
+      213: -2833889349188484370
+    second: Rico_neutral_(jutek) 1_3
+  - first:
+      213: -3390506025428366596
+    second: Rico_neutral_(jutek) 1_4
+  - first:
+      213: -7433339182255181036
+    second: Rico_neutral_(jutek) 1_5
+  - first:
+      213: 2828989657690836355
+    second: Rico_neutral_(jutek) 1_6
+  - first:
+      213: -3615483752954104480
+    second: Rico_neutral_(jutek) 1_7
+  - first:
+      213: 1912274629979310805
+    second: Rico_neutral_(jutek) 1_8
+  - first:
+      213: 2356745367886759222
+    second: Rico_neutral_(jutek) 1_9
+  - first:
+      213: 5258262641997758969
+    second: Rico_neutral_(jutek) 1_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_0
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1077
+        width: 60
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686201a78f26a6f60800000000000000
+      internalID: 8028338105080620678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1072
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b0e3a0204d72560800000000000000
+      internalID: 7289027627149298518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1064
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d456dacb79eea6250800000000000000
+      internalID: 5938821394114372941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_3
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1077
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee28bd8c6a00ca8d0800000000000000
+      internalID: -2833889349188484370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_4
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 0
+        width: 807
+        height: 1805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa4589cbb082f0d0800000000000000
+      internalID: -3390506025428366596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1057
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413ffa2b56977d890800000000000000
+      internalID: -7433339182255181036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1066
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d8ae3ea17924720800000000000000
+      internalID: 2828989657690836355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_7
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1057
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06579fdaea833ddc0800000000000000
+      internalID: -3615483752954104480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_8
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1033
+        width: 111
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da88e0f4a3c98a10800000000000000
+      internalID: 1912274629979310805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 653
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63500feec67d4b020800000000000000
+      internalID: 2356745367886759222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rico_neutral_(jutek) 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 650
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1cbff630a19f840800000000000000
+      internalID: 5258262641997758969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rico_neutral_(jutek) 1_0: 8028338105080620678
+      Rico_neutral_(jutek) 1_1: 7289027627149298518
+      Rico_neutral_(jutek) 1_10: 5258262641997758969
+      Rico_neutral_(jutek) 1_2: 5938821394114372941
+      Rico_neutral_(jutek) 1_3: -2833889349188484370
+      Rico_neutral_(jutek) 1_4: -3390506025428366596
+      Rico_neutral_(jutek) 1_5: -7433339182255181036
+      Rico_neutral_(jutek) 1_6: 2828989657690836355
+      Rico_neutral_(jutek) 1_7: -3615483752954104480
+      Rico_neutral_(jutek) 1_8: 1912274629979310805
+      Rico_neutral_(jutek) 1_9: 2356745367886759222
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

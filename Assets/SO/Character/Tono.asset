@@ -15,5 +15,11 @@ MonoBehaviour:
   characterName: Tono
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   expressions:
-  - expressionName: a
-    sprite: {fileID: 5117101001772026452, guid: 57fa260abd78f364681e6e3e82db5b78, type: 3}
+  - expressionName: netral
+    sprite: {fileID: -1449953107234216406, guid: c5e497478103eac4e9cde38776c20fbe, type: 3}
+  - expressionName: senyum
+    sprite: {fileID: 5761478807281697714, guid: 27f7d6cf4a87fba41ba8da0d15b4a08b, type: 3}
+  - expressionName: marah
+    sprite: {fileID: 190623873399797423, guid: e381f4b2d996f9c4b962b2efb4ce1476, type: 3}
+  - expressionName: cemas
+    sprite: {fileID: 9150600136166482769, guid: bcfa28c72b184714ea4d896f841f68fd, type: 3}

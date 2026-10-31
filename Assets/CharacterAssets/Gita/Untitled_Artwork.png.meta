@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 28a6afb0f7d51884c92f1e5ea879dfee
+guid: d9d0680364d7e3247916af26197105c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3175250354601194271
-    second: Male Sprite by Sutemo2_20261024201716_0
+      213: 1302723820812287101
+    second: Untitled_Artwork_0
+  - first:
+      213: 6146782616825927046
+    second: Untitled_Artwork_1
+  - first:
+      213: -5733780330723738835
+    second: Untitled_Artwork_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +102,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Male Sprite by Sutemo2_20261024201716_0
+      name: Untitled_Artwork_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1158
-        height: 1287
+        x: 345
+        y: 1581
+        width: 10
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f13ffe2df51c01c20800000000000000
-      internalID: 3175250354601194271
+      spriteID: d7cb4f3b964341210800000000000000
+      internalID: 1302723820812287101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork_1
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 19
+        width: 934
+        height: 2024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68594731932cd4550800000000000000
+      internalID: 6146782616825927046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork_2
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 597
+        width: 31
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2bf6170b258d60b0800000000000000
+      internalID: -5733780330723738835
       vertices: []
       indices: 
       edges: []
@@ -135,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Male Sprite by Sutemo2_20261024201716_0: 3175250354601194271
+      Untitled_Artwork_0: 1302723820812287101
+      Untitled_Artwork_1: 6146782616825927046
+      Untitled_Artwork_2: -5733780330723738835
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
