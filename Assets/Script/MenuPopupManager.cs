@@ -63,13 +63,8 @@ public class MenuPopupManager : MonoBehaviour
 
     private void PerformSave()
     {
-        // TODO: panggil sistem save di sini kalau sudah ada, contoh:
-        // SaveManager.Instance.SaveGame();
-
-        // Atau hubungkan lewat Inspector di field "On Save Requested"
+        // Hubungkan ke SaveManager.SaveGame() lewat Inspector di field "On Save Requested"
         onSaveRequested?.Invoke();
-
-        Debug.Log("Save dipanggil (belum ada sistem save yang terhubung).");
     }
 
     private IEnumerator ShowSavePopup()

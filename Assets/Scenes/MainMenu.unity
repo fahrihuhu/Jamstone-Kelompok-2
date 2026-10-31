@@ -1864,7 +1864,7 @@ MonoBehaviour:
   galleryPanel: {fileID: 0}
   settingsPanel: {fileID: 0}
   mailPanel: {fileID: 0}
-  continueButton: {fileID: 0}
+  continueButton: {fileID: 1034057436}
 --- !u!4 &1434698202
 Transform:
   m_ObjectHideFlags: 0
