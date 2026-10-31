@@ -75,6 +75,14 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        // Datang dari tombol Continue: muat save, bukan mulai dari awal
+        if (SaveManager.LoadRequested)
+        {
+            SaveManager.LoadRequested = false;
+            if (SaveManager.Instance != null && SaveManager.Instance.LoadGame())
+                return;
+        }
+
         if (startingDialogue != null)
             StartDialogue(startingDialogue, 0);
     }
@@ -377,6 +385,45 @@ public class GameManager : MonoBehaviour
         storyFlags.TryGetValue(key, out var value) ? value : "";
 
     // ================= SAVE / LOAD =================
-    // Sengaja belum diimplementasi dulu - nanti tinggal aktifkan lagi
-    // kalau SaveManager & SaveData sudah di-setup di project.
+
+    // Data yang dibaca SaveManager saat menyimpan
+    public DialogueData CurrentDialogue => currentDialogue;
+    public int CurrentLineIndex => currentIndex;
+    public Dictionary<string, string> GetFlagsCopy() => new Dictionary<string, string>(storyFlags);
+
+    // Save hanya boleh saat dialog berjalan normal (bukan saat minigame atau fade)
+    public bool CanSave => currentDialogue != null && !inMinigame && !isTransitioning;
+
+    // Dipanggil SaveManager saat memuat save
+    public void RestoreState(DialogueData data, int lineIndex, Dictionary<string, string> flags)
+    {
+        StopTextRoutines();
+        ClearChoices();
+
+        storyFlags = flags != null
+            ? new Dictionary<string, string>(flags)
+            : new Dictionary<string, string>();
+
+        if (data.lines == null || data.lines.Length == 0)
+        {
+            StartDialogue(data, 0);
+            return;
+        }
+
+        lineIndex = Mathf.Clamp(lineIndex, 0, data.lines.Length - 1);
+
+        // Putar ulang perintah panggung & background dari baris 0 sampai sebelum baris tujuan,
+        // supaya karakter dan latar di layar sama seperti saat di-save
+        for (int i = 0; i < lineIndex; i++)
+        {
+            DialogueLine l = data.lines[i];
+            if (!string.IsNullOrEmpty(l.conditionKey) && GetFlag(l.conditionKey) != l.conditionValue) continue;
+            if (!string.IsNullOrEmpty(l.minigameSceneName)) continue;
+
+            if (stage != null) stage.ExecuteCommands(l.stageCommands);
+            if (l.backgroundOverride != null) backgroundUI.sprite = l.backgroundOverride;
+        }
+
+        StartDialogue(data, lineIndex);
+    }
 }

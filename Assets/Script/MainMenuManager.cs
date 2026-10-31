@@ -20,27 +20,23 @@ public class MainMenuManager : MonoBehaviour
     {
         if (continueButton != null)
         {
-            bool hasSaveData = PlayerPrefs.HasKey("SavedScene");
-            continueButton.interactable = hasSaveData;
+            continueButton.interactable = SaveManager.HasSave();
         }
     }
 
     public void OnNewGameClicked()
     {
+        SaveManager.LoadRequested = false; // pastikan mulai dari awal, bukan memuat save
+        Time.timeScale = 1f;
         SceneManager.LoadScene(gameSceneName);
     }
 
     public void OnContinueClicked()
     {
-        if (PlayerPrefs.HasKey("SavedScene"))
-        {
-            string savedScene = PlayerPrefs.GetString("SavedScene");
-            SceneManager.LoadScene(savedScene);
-        }
+        if (SaveManager.HasSave())
+            SaveManager.ContinueGame(gameSceneName);
         else
-        {
             Debug.LogWarning("Tidak ada file simpanan untuk dilanjutkan.");
-        }
     }
 
     public void OnGalleryClicked()
