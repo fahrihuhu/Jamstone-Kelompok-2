@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI; // Ditambahkan untuk penanganan UI Canvas
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -26,6 +27,12 @@ public class ChaseMinigame : MonoBehaviour
     public float resultDelay = 1.5f;
     [Tooltip("Jarak (dalam hitungan sel) pemain dan pengejar yang dianggap tertangkap")]
     public float catchDistance = 0.6f;
+
+    [Header("UI Tutorial / Deskripsi Awal")]
+    [Tooltip("Panel UI Pop-up petunjuk awal")]
+    public GameObject tutorialPanel;
+    [Tooltip("Tombol MULAI KABUR di dalam panel tutorial")]
+    public Button startButton;
 
     [Header("Kecepatan (sel per detik)")]
     public float playerSpeed = 4f;
@@ -104,6 +111,27 @@ public class ChaseMinigame : MonoBehaviour
 
         SetupCamera();
         SpawnActors();
+
+        // Tampilkan Tutorial Panel di awal jika ada, dan tunggu tombol diklik
+        if (tutorialPanel != null)
+        {
+            tutorialPanel.SetActive(true);
+            if (startButton != null)
+            {
+                startButton.onClick.RemoveAllListeners();
+                startButton.onClick.AddListener(StartGameFromTutorial);
+            }
+        }
+        else
+        {
+            StartCoroutine(BeginRoutine());
+        }
+    }
+
+    public void StartGameFromTutorial()
+    {
+        if (tutorialPanel != null)
+            tutorialPanel.SetActive(false);
 
         StartCoroutine(BeginRoutine());
     }
