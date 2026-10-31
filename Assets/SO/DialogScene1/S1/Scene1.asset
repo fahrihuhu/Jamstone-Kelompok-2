@@ -42,8 +42,8 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-    speakerNameOverride: .
+  - character: {fileID: 0}
+    speakerNameOverride: 
     dialogueText: Seseorang menabrak baru Tono dari belakang hingga ia tersungkur.
     isThought: 0
     expression: 
@@ -129,13 +129,13 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
-    speakerNameOverride: sfx
-    dialogueText: 'SFX: Langkah kaki lain mendekat. Gita muncul di layar'
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'SFX: Langkah kaki lain mendekat.'
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
+    sfxClip: {fileID: 8300000, guid: a8fc7159373884e4399438f8b472ae92, type: 3}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 

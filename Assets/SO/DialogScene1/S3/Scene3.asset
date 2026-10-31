@@ -17,10 +17,10 @@ MonoBehaviour:
   lines:
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Background gerbang SMA Garuda, namun tanpa Tono
+    dialogueText: SMA Garuda
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: 2982034661781666424, guid: 88a3df02b62631b47b2c9ed9bba26688, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
@@ -30,7 +30,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: 'Beberapa minggu berlalu di SMA Garuda. '
+    dialogueText: 'Beberapa minggu telah berlalu di SMA Garuda. '
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -124,7 +124,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: 'Namun, di SMA Garuda, ketenangan selalu berumur pendek. // '
+    dialogueText: "Namun, \ndi SMA Garuda, ketenangan selalu berumur pendek. "
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -140,7 +140,7 @@ MonoBehaviour:
     dialogueText: Background bertransisi ke ruang kelas Tono.
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
@@ -163,7 +163,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Hari ini adalah Ulangan Harian Pertama.
+    dialogueText: Hari ini adalah Ulangan Harian Pertama.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -205,7 +205,7 @@ MonoBehaviour:
   - character: {fileID: 0}
     speakerNameOverride: 
     dialogueText: Di bangku mejanya, Tono mulai mengerjakan ulangan harian dengan
-      seksama. //
+      seksama.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}

@@ -87,7 +87,8 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Sprite Tono Hilang
+    dialogueText: Tono berjalan ke meja pojok belakang. Disitu, duduk seorang anak
+      laki-laki berkacamata yang sedang menunduk membaca buku.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -101,20 +102,6 @@ MonoBehaviour:
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 2
       expression: a
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Tono berjalan ke meja pojok belakang. Disitu, duduk seorang anak
-      laki-laki berkacamata yang sedang menunduk membaca buku.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -142,9 +129,9 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: 
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Terima kasih. Namaku Tono.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -162,19 +149,6 @@ MonoBehaviour:
       character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
       position: 3
       expression: a
-    choices: []
-  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-    speakerNameOverride: Tono
-    dialogueText: Terima kasih. Namaku Tono.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -837,7 +811,15 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: a
+    - action: 1
+      character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+      position: 3
+      expression: a
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: 
