@@ -214,5 +214,6 @@ MonoBehaviour:
       nextLineIndex: -1
       setFlagKey: rico_result
       setFlagValue: waspada
+  fadeTransition: 1
   nextDialogue: {fileID: 0}
   conditionalNexts: []

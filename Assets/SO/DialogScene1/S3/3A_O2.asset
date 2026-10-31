@@ -23,8 +23,8 @@ MonoBehaviour:
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
     sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
+    conditionKey: minigame_result
+    conditionValue: lulus
     minigameSceneName: 
     stageCommands: []
     choices: []
@@ -55,5 +55,6 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  nextDialogue: {fileID: 0}
+  fadeTransition: 1
+  nextDialogue: {fileID: 11400000, guid: 3f26ef5474a58e4409a2f1d4148f9b6e, type: 2}
   conditionalNexts: []

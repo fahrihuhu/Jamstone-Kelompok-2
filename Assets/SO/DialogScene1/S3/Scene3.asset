@@ -213,8 +213,15 @@ MonoBehaviour:
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
-    minigameSceneName: Exam Scene
+    minigameSceneName: ExamScene
     stageCommands: []
     choices: []
+  fadeTransition: 1
   nextDialogue: {fileID: 0}
-  conditionalNexts: []
+  conditionalNexts:
+  - conditionKey: minigame_result
+    conditionValue: lulus
+    nextDialogue: {fileID: 11400000, guid: 09b726f20c56bd641a83f191726ec415, type: 2}
+  - conditionKey: minigame_result
+    conditionValue: gagal
+    nextDialogue: {fileID: 11400000, guid: 09b726f20c56bd641a83f191726ec415, type: 2}

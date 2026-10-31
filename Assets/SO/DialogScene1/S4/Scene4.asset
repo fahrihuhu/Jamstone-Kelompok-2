@@ -401,5 +401,12 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
+  fadeTransition: 0
   nextDialogue: {fileID: 0}
-  conditionalNexts: []
+  conditionalNexts:
+  - conditionKey: gita_offer
+    conditionValue: menerima
+    nextDialogue: {fileID: 11400000, guid: 9dbcc6302b6d2c34db88136d04797ed0, type: 2}
+  - conditionKey: gita_offer
+    conditionValue: menolak
+    nextDialogue: {fileID: 11400000, guid: 436bc946e0984fb4baaa47036566d35b, type: 2}
