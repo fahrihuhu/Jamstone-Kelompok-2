@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
-  m_Name: 3A_O2
+  m_Name: 3.1_O1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   sceneId: 
-  sceneDescription: 'JIKA PEMAIN PILIH OPSI 2 (Menolak Tawaran Gita):'
+  sceneDescription: 
   lines:
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
-    dialogueText: Maaf, ya. Aku enggak mau terlibat bisnis  seperti itu.
+    dialogueText: Boleh... Tapi pastikan Rico dan anak buahnya enggak ada yang berani
+      macam-macam sama aku.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
     sfxVolume: 1
-    conditionKey: minigame_result
-    conditionValue: lulus
+    conditionKey: 
+    conditionValue: 
     minigameSceneName: 
     stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
-    dialogueText: Beneran nolak? Yaudah, jangan salahkan gua kalau Rico atau anak-anak
-      lain terus-terusan mengganggumu ya.
+    dialogueText: Deal. Nanti sore mampir ke kantin ya, Tono.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -41,23 +41,6 @@ MonoBehaviour:
     conditionValue: 
     minigameSceneName: 
     stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Gita pergi.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands:
-    - action: 1
-      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
-      position: 3
-      expression: a
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -74,7 +57,11 @@ MonoBehaviour:
     - action: 1
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 1
-      expression: a
+      expression: 
+    - action: 1
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 3
+      expression: 
     choices: []
   fadeTransition: 0
   nextDialogue: {fileID: 11400000, guid: 3f26ef5474a58e4409a2f1d4148f9b6e, type: 2}

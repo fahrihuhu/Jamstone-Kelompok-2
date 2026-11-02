@@ -232,7 +232,7 @@ public class ExamMinigameManager : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.ReportMinigameResult(isPassed);
+            GameManager.Instance.ReportMinigameResult(isPassed, "lulus", "gagal");
         }
     }
 }

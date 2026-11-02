@@ -224,4 +224,4 @@ MonoBehaviour:
     nextDialogue: {fileID: 11400000, guid: 09b726f20c56bd641a83f191726ec415, type: 2}
   - conditionKey: minigame_result
     conditionValue: gagal
-    nextDialogue: {fileID: 11400000, guid: 09b726f20c56bd641a83f191726ec415, type: 2}
+    nextDialogue: {fileID: 11400000, guid: acc24f1af23ad564b88a44e021b3af16, type: 2}
