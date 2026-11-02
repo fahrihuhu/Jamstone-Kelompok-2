@@ -1,0 +1,382 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
+  m_Name: Scene3B
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  sceneId: S3B
+  sceneDescription: 
+  lines:
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: ' SFX: Suara riuh murid di koridor.'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: -173954723506884847, guid: d7df5b913413b554dbfc2347973c852d, type: 3}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'Pengumuman hasil ulangan harian resmi ditempel. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'Nama "TONO" berada di tengah-tengah, tidak terlalu diatas namun
+      tidak juga terlalu dibawah. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'Perasaan Tono campur aduk. Biasanya, dia selalu mendapatkan nilai
+      tertinggi dan berada di urutan teratas. '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Lalu..
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: 'Woy, Mata Empat!!  '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: a
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: 'Gua kira lu pinter banget sampai gaya lu belagu, ternyata kagak!
+      Kacamata doang tebel, tapi otak standar! Hahaha! '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: rico_result
+    conditionValue: waspada
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: a
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: ...
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: a
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: a
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Gua kagak suka basa-basi. Tadinya gua mau ngasih penawaran spesial
+      buat lu. Tapi abis liat nilai lu yang biasa aja ini, gua urungin niat gua.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Tapi gua ada penawaran lain!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Gua bisa pastiin gaada orang yang berani nyentuh lu di koridor
+      ini, tapi lu harus jadi orang suruhan gua dan anak buah gua!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Bukannya kamu sudah punya anak buah yang bisa disuruh-suruh?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Kamu.. kamu.. Cuih! Sok rapi banget bahasa lu.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Ya emang, tapi orang luar tak kasat mata kayak lu bisa lebih berguna
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: "Gimana? Lu tau kan disini lu butuh \u201Cbekingan\u201D? Hahaha!"
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Aku enggak mau. Aku ke sini buat belajar, bukan jadi pembantu kalian.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Belajar? Belajar apaan? Orang nilai lu ga seberapa!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Lu berani nolak gua, Mata Empat?!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Sprite Gita muncul menyela dari arah kanan
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 4
+      expression: a
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Elah, Ric! Lo pikir anak kayak dia mau disuruh-suruh cuma demi
+      'jaminan aman' kagak jelas dari lo?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: Diem lu, Gita! Kagak usah ikut campur mulu!
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Bodo amat.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Rico terdiam sesaat, dan kemudian dia membatalkan penawarannya
+      untuk Tono
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: 'Cih... Awas lu ya, Mata Empat! '
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'Sprite Rico hilang. Gita kini menatap Tono dengan senyum tipis.
+
+'
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: a
+    - action: 0
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 3
+      expression: a
+    choices: []
+  fadeTransition: 0
+  nextDialogue: {fileID: 11400000, guid: b7470e2f1ac633941aed202a4343f3f1, type: 2}
+  conditionalNexts: []

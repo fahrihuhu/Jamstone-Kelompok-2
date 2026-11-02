@@ -3,19 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
-using UnityEngine.UI; // Ditambahkan untuk penanganan UI Canvas
+using UnityEngine.UI; 
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
 
-// Minigame kejar-kejaran. Taruh di satu GameObject kosong di PacmanScene.
-//
-// Dua cara menyusun maze:
-//  1. Tilemap (disarankan): isi Wall Tilemap, dan tandai posisi awal dengan objek kosong.
-//  2. Layout teks: biarkan Wall Tilemap kosong, maze dibangun dari kotak berwarna (untuk tes cepat).
-//
-// Aturan: pemain terus berlari, hanya mengatur belokan.
-// Bertahan selama "Survive Duration" = lolos. Tersentuh pengejar = tertangkap.
 public class ChaseMinigame : MonoBehaviour
 {
     [Header("Aturan")]
@@ -104,7 +96,7 @@ public class ChaseMinigame : MonoBehaviour
         else
         {
             Maze = new ChaseMaze(layout);
-            BuildTextVisuals(); // Tilemap sudah punya visual sendiri, layout teks belum
+            BuildTextVisuals(); 
         }
 
         timeLeft = surviveDuration;
@@ -112,7 +104,6 @@ public class ChaseMinigame : MonoBehaviour
         SetupCamera();
         SpawnActors();
 
-        // Tampilkan Tutorial Panel di awal jika ada, dan tunggu tombol diklik
         if (tutorialPanel != null)
         {
             tutorialPanel.SetActive(true);
