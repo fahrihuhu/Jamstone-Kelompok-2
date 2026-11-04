@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
+  m_Name: Scene4B 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  sceneId: S4b.1
+  sceneDescription: JIKA NILAI UJIAN TINGGI (Benar > 8)
+  lines:
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+    speakerNameOverride: Aris
+    dialogueText: Nilai ujianmu tertinggi seangkatan. Bahkan mengalahkanku. Otak
+      encer seperti kamu adalah aset berharga.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+    speakerNameOverride: Aris
+    dialogueText: OSIS bisa memberimu perlindungan resmi dari gangguan Rico maupun
+      Gita. Kamu tidak perlu takut lagi dipalak atau diancam di koridor.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Syaratnya apa?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+    speakerNameOverride: Aris
+    dialogueText: Pakai kecerdasanmu untuk jadi 'mata-mata' OSIS. Kumpulkan data
+      dan bukti pelanggaran dari Faksi Olahraga dan Faksi Kantin. Bantu aku merapikan
+      sekolah ini dari dalam.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: (Aris mau memanfaatkanku untuk mengintai dua faksi lain... Tapi
+      kalau aku menolak, aku tidak punya siapa-siapa lagi untuk berlindung.)
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices:
+    - choiceText: Terima Tawaran OSIS
+      nextDialogue: {fileID: 11400000, guid: 265c66745bcf33347887cf413f12534f, type: 2}
+      nextLineIndex: 0
+      setFlagKey: 
+      setFlagValue: 
+    - choiceText: Tolak Tawaran OSIS
+      nextDialogue: {fileID: 11400000, guid: 13fc0ab92063d624da5248f1322ad292, type: 2}
+      nextLineIndex: 0
+      setFlagKey: 
+      setFlagValue: 
+  fadeTransition: 0
+  nextDialogue: {fileID: 0}
+  conditionalNexts: []

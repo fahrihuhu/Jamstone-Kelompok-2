@@ -10,14 +10,70 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
-  m_Name: Scene1C
+  m_Name: Scene5B
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  sceneId: S1C
-  sceneDescription: 'OPSI 3: Lawan '
+  sceneId: 5B
+  sceneDescription: 
   lines:
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
-    dialogueText: Nggak mau
+    dialogueText: (Gita! Aku harus minta bantuan Faksi Kantin!)
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: // Tono berlari cepat ke belakang kantin dan menemui Gita. Gita
+      langsung memanggil 2 orang temannya yang berbadan besar dari tongkrongan untuk
+      mendatangi lokasi bersama Tono. //
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Sprite Tono dan Gita muncul di kiri, Rico muncul di kanan
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Elah, Ric. Malak anak orang sendirian di kelas kosong? Kasihan
+      amat kagak ada yang nemenin.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: // Rico kaget melihat Gita datang membawa 2 anak tongkrongan besar
+      di belakangnya.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -30,7 +86,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
-    dialogueText: Sori..?!!
+    dialogueText: Gita... Lagi-lagi lu ikut campur urusan gua?!
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -41,9 +97,10 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-    speakerNameOverride: Tono
-    dialogueText: Aku nggak mau!
+  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+    speakerNameOverride: Gita
+    dialogueText: Tono ini sekarang anak gua, Ric. Cabut ga lo! Atau temen gua ini
+      yang bakal seret lu keluar dari kelas.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -56,7 +113,8 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
-    dialogueText: Brengsek..!
+    dialogueText: AHAHAHAH! Lu pikir gua takut cuma gara-gara lu bawa 2 ekor anak
+      kantin, Git? Gua udah gedek banget sama lu dari pagi!
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -69,9 +127,9 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
-    dialogueText: buk
+    dialogueText: Maju lu semua kalau mau mampus di sini!
     isThought: 0
-    expression: Angry
+    expression: 
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
     sfxVolume: 1
@@ -82,10 +140,9 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
-    dialogueText: Cukup, Rico! Disini masih banyak orang, lo mau nyari masalah lagi
-      sama anak OSIS?
+    dialogueText: Sialan... Rico udah hilang akal!
     isThought: 0
-    expression: Angry
+    expression: 
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
     sfxVolume: 1
@@ -96,21 +153,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
-    dialogueText: Tch! Gua tandain muka lu, mata empat!
-    isThought: 0
-    expression: Angry
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
-    speakerNameOverride: Gita
-    dialogueText: "Boleh juga lo, anak baru. Tapi asal lo tau, omongan doang ga bakal
-      nyegah Rico buat\u2026. "
+    dialogueText: GUA HABISIN LU SEMUA HARI INI!!
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -121,9 +164,10 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-    speakerNameOverride: Tono
-    dialogueText: 'Permisi. '
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'Layar mendadak blackout/hitam! SFX: Suara teriakan benturan meja
+      roboh.'
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -134,60 +178,19 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-    speakerNameOverride: Tono
-    dialogueText: ' '
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 'Teks Fade In: To Be Continued'
     isThought: 0
-    expression: hilang
+    expression: 
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands:
-    - action: 1
-      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-      position: 1
-      expression: a
+    stageCommands: []
     choices: []
-  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
-    speakerNameOverride: Gita
-    dialogueText: heeee
-    isThought: 0
-    expression: senyum
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands:
-    - action: 1
-      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
-      position: 3
-      expression: a
-    - action: 2
-      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
-      position: 4
-      expression: 
-    choices: []
-  - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
-    speakerNameOverride: Gita
-    dialogueText: 
-    isThought: 0
-    expression: senyum
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands:
-    - action: 1
-      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
-      position: 4
-      expression: a
-    choices: []
-  nextDialogue: {fileID: 11400000, guid: c9d30e560e51b3849900fc464611a60b, type: 2}
+  fadeTransition: 1
+  nextDialogue: {fileID: 0}
   conditionalNexts: []
