@@ -83,7 +83,8 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 1
-      expression: a
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: ???
@@ -100,7 +101,8 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
       position: 3
-      expression: a
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: ???
@@ -158,7 +160,8 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
       position: 4
-      expression: a
+      expression: netral
+      flipX: 1
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico

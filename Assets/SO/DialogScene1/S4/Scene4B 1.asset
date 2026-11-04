@@ -88,13 +88,13 @@ MonoBehaviour:
     - choiceText: Terima Tawaran OSIS
       nextDialogue: {fileID: 11400000, guid: 265c66745bcf33347887cf413f12534f, type: 2}
       nextLineIndex: 0
-      setFlagKey: 
-      setFlagValue: 
+      setFlagKey: osis_offer
+      setFlagValue: terima
     - choiceText: Tolak Tawaran OSIS
       nextDialogue: {fileID: 11400000, guid: 13fc0ab92063d624da5248f1322ad292, type: 2}
       nextLineIndex: 0
-      setFlagKey: 
-      setFlagValue: 
+      setFlagKey: osis_offer
+      setFlagValue: tolak
   fadeTransition: 0
   nextDialogue: {fileID: 0}
   conditionalNexts: []

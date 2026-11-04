@@ -72,4 +72,10 @@ MonoBehaviour:
     choices: []
   fadeTransition: 0
   nextDialogue: {fileID: 0}
-  conditionalNexts: []
+  conditionalNexts:
+  - conditionKey: minigame_result
+    conditionValue: lulus
+    nextDialogue: {fileID: 11400000, guid: b3d41efbfa835c841ab77a5221d56e89, type: 2}
+  - conditionKey: minigame_result
+    conditionValue: gagal
+    nextDialogue: {fileID: 11400000, guid: 7387e92aa5b8af24faab753f09c2c868, type: 2}

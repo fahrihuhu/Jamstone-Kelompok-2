@@ -56,8 +56,8 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Tono keluar dari ruang OSIS. Langkah kakinya terasa berat, menyadari
-      ia kini benar-benar berdiri sendirian di SMA Garuda. //
+    dialogueText: Tono keluar dari ruang OSIS. Langkah kakinya terasa berat, menyadari
+      ia kini benar-benar berdiri sendirian di SMA Garuda.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}

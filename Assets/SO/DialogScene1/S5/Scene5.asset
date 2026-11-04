@@ -196,6 +196,34 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: 
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices:
+    - choiceText: 'Minta Bantuan Aris '
+      nextDialogue: {fileID: 11400000, guid: a39c89d2f063e2247b0f22157d71d2fc, type: 2}
+      nextLineIndex: 0
+      setFlagKey: jalur_aliansi
+      setFlagValue: osis
+    - choiceText: Minta Bantuan Faksi Kantin
+      nextDialogue: {fileID: 11400000, guid: 259562e9539438e4681b14f53bfdf086, type: 2}
+      nextLineIndex: 0
+      setFlagKey: jalur_aliansi
+      setFlagValue: kantin
+    - choiceText: 'Turun Tangan Langsung '
+      nextDialogue: {fileID: 11400000, guid: 173dc52006a6abf4ab178268e9ad049a, type: 2}
+      nextLineIndex: 0
+      setFlagKey: jalur_aliansi
+      setFlagValue: netral
   fadeTransition: 1
   nextDialogue: {fileID: 0}
   conditionalNexts:

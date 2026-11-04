@@ -34,10 +34,11 @@ public class ConditionalNext
 
 public enum StageAction
 {
-    Show,              // Munculkan karakter di slot posisi tertentu
-    Hide,              // Hilangkan satu karakter dari layar
-    ChangeExpression,  // Ganti ekspresi karakter yang sudah ada di layar
-    HideAll            // Kosongkan seluruh panggung (misal pindah lokasi)
+    Show,              
+    Hide,              
+    ChangeExpression,  
+    HideAll,   
+    Flip        
 }
 
 public enum StagePosition
@@ -63,6 +64,9 @@ public class StageCommand
 
     [Tooltip("Nama ekspresi. Dipakai untuk Show dan ChangeExpression. Harus cocok dengan salah satu di CharacterData.")]
     public string expression = "Normal";
+
+    [Tooltip("Centang untuk membalik karakter secara horizontal (mirror). Dipakai untuk Show dan Flip.")]
+    public bool flipX = false;
 }
 
 [System.Serializable]

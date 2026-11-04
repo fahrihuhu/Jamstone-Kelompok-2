@@ -2,13 +2,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // Taruh di objek "CharacterStage" di dalam Canvas VN.
-// Isi array Slots dengan 3 Image berurutan: Kiri, Tengah, Kanan.
+// Isi array Slots dengan 5 Image berurutan: FarLeft, Left, Center, Right, FarRight.
 // Sprite menetap di slotnya sampai ada perintah Hide / HideAll.
 // Yang sedang bicara tampil terang, yang lain diredupkan.
 public class CharacterStage : MonoBehaviour
 {
     [Header("Slot Posisi")]
-    [Tooltip("Urutan: 0 Left, 1 Center, 2 Right, 3 FarLeft, 4 FarRight")]
+    [Tooltip("Urutan harus sama dengan enum StagePosition: 0 FarLeft, 1 Left, 2 Center, 3 Right, 4 FarRight")]
     public Image[] slots;
 
     [Header("Efek")]
@@ -70,6 +70,7 @@ public class CharacterStage : MonoBehaviour
                 case StageAction.Hide:             Hide(cmd.character); break;
                 case StageAction.ChangeExpression: ChangeExpression(cmd.character, cmd.expression); break;
                 case StageAction.HideAll:          HideAll(); break;
+                case StageAction.Flip:             Flip(cmd.character, cmd.flipX); break;
             }
         }
     }
@@ -102,6 +103,7 @@ public class CharacterStage : MonoBehaviour
 
         occupants[slot] = cmd.character;
         slots[slot].sprite = sprite;
+        SetFlip(slot, cmd.flipX);
         targetAlpha[slot] = 1f;
     }
 
@@ -126,6 +128,26 @@ public class CharacterStage : MonoBehaviour
         Sprite sprite = character.GetExpression(expression);
         if (sprite != null)
             slots[slot].sprite = sprite;
+    }
+
+    private void Flip(CharacterData character, bool flipped)
+    {
+        int slot = FindSlot(character);
+        if (slot < 0)
+        {
+            Debug.LogWarning("Flip: karakter belum ada di panggung.");
+            return;
+        }
+        SetFlip(slot, flipped);
+    }
+
+    // Balik horizontal lewat scale.x negatif. Pivot Image sebaiknya (0.5, 0.5).
+    private void SetFlip(int slot, bool flipped)
+    {
+        RectTransform rt = slots[slot].rectTransform;
+        Vector3 s = rt.localScale;
+        s.x = Mathf.Abs(s.x) * (flipped ? -1f : 1f);
+        rt.localScale = s;
     }
 
     public void HideAll()

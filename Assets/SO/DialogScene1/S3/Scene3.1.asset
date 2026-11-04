@@ -130,13 +130,13 @@ MonoBehaviour:
     - choiceText: '[ Menerima Tawaran Gita ] (Membantu bisnis sontekan Kantin)'
       nextDialogue: {fileID: 11400000, guid: bd6caa9be3bc0b946b9d6d24650ee6eb, type: 2}
       nextLineIndex: 0
-      setFlagKey: gita_bantu
-      setFlagValue: bantu
+      setFlagKey: gita_offer
+      setFlagValue: menerima
     - choiceText: '[ Menolak Tawaran Gita ] (Menolak terlibat bisnis ilegal)'
       nextDialogue: {fileID: 11400000, guid: 6277d2447824c0e47a558bbbee606665, type: 2}
       nextLineIndex: 0
-      setFlagKey: gita_tolak
-      setFlagValue: tolak
+      setFlagKey: gita_offer
+      setFlagValue: menolak
   fadeTransition: 0
   nextDialogue: {fileID: 0}
   conditionalNexts: []
