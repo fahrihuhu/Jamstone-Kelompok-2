@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scene4A
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   sceneId: S4A
-  sceneDescription: 
+  sceneDescription: MENERIMA TAWARAN GITA SEBELUMNYA
   lines:
   - character: {fileID: 0}
     speakerNameOverride: Aris
@@ -229,5 +229,6 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
+  fadeTransition: 0
   nextDialogue: {fileID: 0}
   conditionalNexts: []

@@ -13,7 +13,63 @@ MonoBehaviour:
   m_Name: Scene4B
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   sceneId: S4b
-  sceneDescription: 
-  lines: []
+  sceneDescription: MENOLAK TAWARAN GITA SEBELUMNYA
+  lines:
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+    speakerNameOverride: Aris
+    dialogueText: Aku tahu kamu menolak perintah Rico, dan kamu juga menolak tawaran
+      dari Gita di koridor tadi. Pilihan yang sangat berani, Tono.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Aku cuma tidak mau terlibat hal-hal yang melanggar aturan sekolah.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+    speakerNameOverride: Aris
+    dialogueText: Hahaha, sikap yang bersih. Tapi berdiri sendirian di SMA Garuda
+      itu sama saja dengan menyerahkan diri untuk dihancurkan. Rico dan faksinya
+      Gita tidak akan tinggal diam.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Lalu... apa tujuanmu memanggilku ke sini?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  fadeTransition: 0
   nextDialogue: {fileID: 0}
   conditionalNexts: []

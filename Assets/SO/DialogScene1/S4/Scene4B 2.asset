@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad63281a002ea1e488eed84a1bb6e643, type: 3}
+  m_Name: Scene4B 2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  sceneId: S4b.2
+  sceneDescription: JIKA NILAI UJIAN RENDAH (Benar < 8)
+  lines:
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+    speakerNameOverride: Aris
+    dialogueText: Nilai ujianmu biasa saja. Jujur saja, kamu tidak punya posisi tawar
+      sama sekali. Tanpa perlindungan, kamu cuma akan jadi sasaran empuk pemerasan
+      Rico setiap hari.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+    speakerNameOverride: Aris
+    dialogueText: Aku akan tawarkan perlindungan resmi. Tapi ada harganya. Aku ingin
+      kamu menjadi 'umpan' pemicu pelanggaran bagi Faksi Olahraga maupun Kantin.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: Umpan pemicu pelanggaran... Maksudmu bagaimana?
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+    speakerNameOverride: Aris
+    dialogueText: Buat dirimu dipancing, dipalak, atau diserang oleh mereka di area
+      yang terpantau CCTV atau pengawasan OSIS. Begitu mereka melakukan aksi fisik
+      padamu, kami punya alasan resmi untuk menjatuhkan sanksi berat dan mengeluarkan
+      SP.
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices: []
+  - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+    speakerNameOverride: Tono
+    dialogueText: (Aris mau menjadikanku tameng hidup demi menjatuhkan faksi lain...
+      Ini benar-benar berisiko.)
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 0
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands: []
+    choices:
+    - choiceText: Terima Tawaran OSIS
+      nextDialogue: {fileID: 11400000, guid: 8afc1c6c78f134e4698f4f3d549d842d, type: 2}
+      nextLineIndex: 0
+      setFlagKey: 
+      setFlagValue: 
+    - choiceText: Tolak Tawaran OSIS
+      nextDialogue: {fileID: 11400000, guid: 200fb53e406b1604986aac5a8ff49855, type: 2}
+      nextLineIndex: 0
+      setFlagKey: 
+      setFlagValue: 
+  fadeTransition: 0
+  nextDialogue: {fileID: 0}
+  conditionalNexts: []
