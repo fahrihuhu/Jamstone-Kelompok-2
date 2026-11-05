@@ -21,5 +21,5 @@ MonoBehaviour:
     sprite: {fileID: 8416243949045666254, guid: fab38da2cb84026479673a346c958215, type: 3}
   - expressionName: Senyum
     sprite: {fileID: -6950486346419376927, guid: ed296dc74393ef948a05a943b9fb943a, type: 3}
-  - expressionName: Cemas / Gelisah?
+  - expressionName: cemas
     sprite: {fileID: 6146782616825927046, guid: d9d0680364d7e3247916af26197105c8, type: 3}

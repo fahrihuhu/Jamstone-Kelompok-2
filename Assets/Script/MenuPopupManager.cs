@@ -10,6 +10,10 @@ public class MenuPopupManager : MonoBehaviour
     [SerializeField] private GameObject quitPopup;
     [SerializeField] private GameObject savePopup;
 
+    [Header("Grup Tombol Menu")]
+    [Tooltip("Objek induk berisi tombol Quit, Main Menu, Save, History. Disembunyikan saat popup terbuka. JANGAN taruh script ini di objek yang sama.")]
+    [SerializeField] private GameObject menuButtonsPanel;
+
     [Header("Pengaturan")]
     [SerializeField] private string mainMenuSceneName = "MainMenu";
     [SerializeField] private bool pauseGameSaatPopup = true;
@@ -27,12 +31,28 @@ public class MenuPopupManager : MonoBehaviour
         if (mainMenuPopup != null) mainMenuPopup.SetActive(false);
         if (quitPopup != null) quitPopup.SetActive(false);
         if (savePopup != null) savePopup.SetActive(false);
+
+        ShowMenuButtons();
+    }
+
+    // ===== GRUP TOMBOL =====
+
+    // Juga bisa dipanggil dari OnClick tombol History (buka) dan tombol Close History (tutup)
+    public void HideMenuButtons()
+    {
+        if (menuButtonsPanel != null) menuButtonsPanel.SetActive(false);
+    }
+
+    public void ShowMenuButtons()
+    {
+        if (menuButtonsPanel != null) menuButtonsPanel.SetActive(true);
     }
 
     // ===== MAIN MENU =====
 
     public void OpenMainMenuPopup()
     {
+        HideMenuButtons();
         mainMenuPopup.SetActive(true);
         PauseGame(true);
     }
@@ -46,6 +66,7 @@ public class MenuPopupManager : MonoBehaviour
     public void CancelMainMenu()
     {
         mainMenuPopup.SetActive(false);
+        ShowMenuButtons();
         PauseGame(false);
     }
 
@@ -55,6 +76,7 @@ public class MenuPopupManager : MonoBehaviour
     public void OnSaveButtonClicked()
     {
         PerformSave();
+        HideMenuButtons();
 
         // Kalau diklik berulang, ulangi hitungan dari awal
         if (saveRoutine != null) StopCoroutine(saveRoutine);
@@ -75,6 +97,7 @@ public class MenuPopupManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(saveBerhasilDurasi);
 
         savePopup.SetActive(false);
+        ShowMenuButtons();
         saveRoutine = null;
     }
 
@@ -82,6 +105,7 @@ public class MenuPopupManager : MonoBehaviour
 
     public void OpenQuitPopup()
     {
+        HideMenuButtons();
         quitPopup.SetActive(true);
         PauseGame(true);
     }
@@ -100,6 +124,7 @@ public class MenuPopupManager : MonoBehaviour
     public void CancelQuit()
     {
         quitPopup.SetActive(false);
+        ShowMenuButtons();
         PauseGame(false);
     }
 

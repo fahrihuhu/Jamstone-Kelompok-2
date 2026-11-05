@@ -20,31 +20,23 @@ MonoBehaviour:
     dialogueText: (Aku harus menghadapinya sendiri!)
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Tono mengepalkan tangan, mendobrak pintu kelas, dan melangkah
-      masuk untuk menghadapi Rico sendirian. //
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Sprite Tono muncul di kiri, Rico dan Radit muncul di kanan
+    dialogueText: Tono mengepalkan tangan, mendobrak pintu kelas, dan melangkah masuk
+      untuk menghadapi Rico sendirian.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -66,7 +58,22 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 0
+      expression: marah
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: marah
+      flipX: 1
+    - action: 0
+      character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+      position: 4
+      expression: Panik
+      flipX: 1
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -79,7 +86,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: senyum
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -96,7 +108,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Tono melangkah mendekat, berdiri tepat di depan Rico tanpa ada
+    dialogueText: Tono melangkah mendekat, berdiri tepat di depan Rico tanpa ada
       rasa takut di matanya.
     isThought: 0
     expression: 
@@ -106,7 +118,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -124,7 +141,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Rico menyeringai sinis, terkejut melihat tatapan lurus dan berani
+    dialogueText: Rico menyeringai sinis, terkejut melihat tatapan lurus dan berani
       dari Tono.
     isThought: 0
     expression: 
@@ -148,7 +165,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -166,7 +188,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Ucapan Tono membuat emosi Rico benar-benar tersulut.
+    dialogueText: Ucapan Tono membuat emosi Rico benar-benar tersulut.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -217,24 +239,10 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: 'Layar mendadak blackout/hitam! SFX: Suara pukulan telak yang sangat
-      keras ke wajah (Brakkk!)'
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
   fadeTransition: 1
   nextDialogue: {fileID: 0}
   conditionalNexts: []
   showEndCard: 1
   endCardText: To Be Continued
-  endCardSfx: {fileID: 0}
+  endCardSfx: {fileID: 8300000, guid: 4ef3d431d18fd9747b2719a628a1558f, type: 3}
   endCardSfxVolume: 1

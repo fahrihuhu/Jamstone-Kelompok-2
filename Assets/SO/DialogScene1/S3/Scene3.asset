@@ -20,7 +20,7 @@ MonoBehaviour:
     dialogueText: SMA Garuda
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 2982034661781666424, guid: 88a3df02b62631b47b2c9ed9bba26688, type: 3}
+    backgroundOverride: {fileID: -6782079960528466537, guid: f017ccbba3f47c04ebfd181703a1d895, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
@@ -60,7 +60,7 @@ MonoBehaviour:
     dialogueText: 'Langkah kaki anak-anak Faksi Olahraga yang menggema di koridor, '
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: 2502215086801707522, guid: 50f28a2eb4bbfb649b058726ca75469d, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
@@ -114,7 +114,7 @@ MonoBehaviour:
       pelajaran\u2014satu-satunya zona nyaman yang ia kuasai. "
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
@@ -137,11 +137,11 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: 'SFX: Suara jarum jam dinding berdetak lambat dan nyaring.'
+    dialogueText: (Suara jarum jam dinding berdetak lambat dan nyaring.)
     isThought: 0
     expression: 
     backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
-    sfxClip: {fileID: 0}
+    sfxClip: {fileID: 8300000, guid: 13446ba4f4e28fd46b159949ec6156b1, type: 3}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
@@ -225,3 +225,7 @@ MonoBehaviour:
   - conditionKey: minigame_result
     conditionValue: gagal
     nextDialogue: {fileID: 11400000, guid: acc24f1af23ad564b88a44e021b3af16, type: 2}
+  showEndCard: 0
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

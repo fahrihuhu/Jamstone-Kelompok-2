@@ -17,10 +17,10 @@ MonoBehaviour:
   lines:
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: '// Kelas telah usai. Saatnya Tono pulang '
+    dialogueText: 'Kelas telah usai. Saatnya Tono pulang '
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: -6782079960528466537, guid: f017ccbba3f47c04ebfd181703a1d895, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
@@ -30,7 +30,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Namun.. //
+    dialogueText: Namun..
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -56,7 +56,35 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Sprite Rico muncul, dan 2 anak buahnya
+    dialogueText: Rico muncul beserta anak buahnya
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 0}
+    sfxClip: {fileID: 0}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: marah
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: netral
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 4
+      expression: senyum
+      flipX: 0
+    choices: []
+  - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+    speakerNameOverride: Rico
+    dialogueText: 'Jangan pikir lu bisa lari dari gua! '
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -77,22 +105,28 @@ MonoBehaviour:
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: 
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: Kejar
-    stageCommands: []
+    minigameSceneName: kejar
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: marah
+      flipX: 0
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: netral
+      flipX: 0
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 4
+      expression: senyum
+      flipX: 0
     choices: []
   fadeTransition: 1
   nextDialogue: {fileID: 11400000, guid: 925a81fec983d2144acda295e320f701, type: 2}
   conditionalNexts: []
+  showEndCard: 0
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1
