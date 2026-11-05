@@ -19,30 +19,57 @@ MonoBehaviour:
     speakerNameOverride: Tono
     dialogueText: (Aku harus lapor ke OSIS! Aris sudah berjanji akan menjamin keamananku
       kalau ada pelanggaran!)
-    isThought: 0
+    isThought: 1
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Tono berbalik arah dan berlari cepat menyusuri koridor utama
-      menuju ruang OSIS. Kebetulan, ia melihat Aris sedang berdiri sendirian di depan
-      ruangannya
+    dialogueText: Drap.Drap.Drap
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: 2502215086801707522, guid: 50f28a2eb4bbfb649b058726ca75469d, type: 3}
+    sfxClip: {fileID: 8300000, guid: 5174a1997528a19439fe942488e4b8aa, type: 3}
+    sfxVolume: 1
+    conditionKey: 
+    conditionValue: 
+    minigameSceneName: 
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: netral
+      flipX: 0
+    choices: []
+  - character: {fileID: 0}
+    speakerNameOverride: 
+    dialogueText: Tono berbalik arah dan berlari cepat menyusuri koridor utama menuju
+      ruang OSIS. Kebetulan, ia melihat Aris sedang berdiri sendirian di depan ruangannya
+    isThought: 0
+    expression: 
+    backgroundOverride: {fileID: 2502215086801707522, guid: 50f28a2eb4bbfb649b058726ca75469d, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+      position: 2
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -56,12 +83,22 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: cemas
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+      position: 2
+      expression: netral
+      flipX: 1
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
     dialogueText: Mendengar laporan itu, Aris tersenyum tipis. Tanpa memanggil anggota
-      OSIS lain, ia mengisyaratkan Tono untuk mengikutinya kembali ke kelas. //
+      OSIS lain, ia mengisyaratkan Tono untuk mengikutinya kembali ke kelas.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -70,33 +107,50 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Sprite Aris dan Tono muncul di kiri, Rico dan Radit muncul di kanan.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+      position: 2
+      expression: senyum
+      flipX: 0
+    - action: 1
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: panik
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
     dialogueText: Hentikan aksi murahanmu itu, Rico.
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+      position: 1
+      expression: marah
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 0
+      expression: cemas
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: marah
+      flipX: 1
+    - action: 0
+      character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+      position: 4
+      expression: Panik
+      flipX: 1
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -110,7 +164,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
@@ -142,8 +201,8 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Bukannya takut, urat-urat di leher dan wajah Rico justru mengeras
-      akibat emosi yang membuncah. //
+    dialogueText: Bukannya takut, urat-urat di leher dan wajah Rico justru mengeras
+      akibat emosi yang membuncah.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -170,7 +229,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
-    dialogueText: Gua bakal hancurin muka lu berdua sekalian hari ini, bangsat!
+    dialogueText: Gua bakal hancurin muka lu berdua sekalian hari ini, BANGSAT!
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -183,49 +242,27 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Rico mengepalkan tinjunya erat-erat. Tanpa diduga, ia melangkah
-      maju penuh amarah menyerang Aris dan Tono. //
+    dialogueText: Rico mengepalkan tinjunya erat-erat. Tanpa diduga, ia melangkah
+      maju penuh amarah menyerang Aris dan Tono.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: Kejar
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: 'Layar mendadak blackout/hitam! SFX: Suara pukulan mentah keras
-      (Brakkk!)'
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
+    sfxClip: {fileID: 8300000, guid: 29a72c4194be7e2488cfbecce37bd15e, type: 3}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: 'Teks Fade In di tengah: TO BE CONTINUED'
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: marah
+      flipX: 0
     choices: []
   fadeTransition: 1
   nextDialogue: {fileID: 0}
   conditionalNexts: []
   showEndCard: 1
   endCardText: To Be Continued
-  endCardSfx: {fileID: 0}
+  endCardSfx: {fileID: 8300000, guid: 4ef3d431d18fd9747b2719a628a1558f, type: 3}
   endCardSfxVolume: 1

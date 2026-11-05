@@ -17,8 +17,7 @@ MonoBehaviour:
   lines:
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: 'Layar menampilkan background kelas. SFX: Suara benturan keras
-      ke dinding.'
+    dialogueText: ' SFX: Suara benturan keras ke dinding.'
     isThought: 0
     expression: 
     backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
@@ -31,9 +30,9 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Sore harinya, saat suasana sekolah mulai sepi. Tono yang hendak
+    dialogueText: Sore harinya, saat suasana sekolah mulai sepi. Tono yang hendak
       mengambil barangnya yang tertinggal berjalan melintasi koridor menuju ruang
-      kelasnya. Tiba-tiba ia mendengar suara gaduh dari dalam kelas.  //
+      kelasnya. Tiba-tiba ia mendengar suara gaduh dari dalam kelas.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -42,12 +41,7 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands:
-    - action: 0
-      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-      position: 2
-      expression: a
-      flipX: 0
+    stageCommands: []
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -61,13 +55,23 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+      position: 1
+      expression: Panik
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: senyum
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
     dialogueText: Hahaha! Buka tas lu, pendek! Katanya lu temennya si Mata Empat
       baru itu, kan?!
-    isThought: 1
+    isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
@@ -80,7 +84,7 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
     dialogueText: T-tolong, Rico... Aku beneran enggak punya uang lagi...
-    isThought: 1
+    isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
@@ -103,15 +107,16 @@ MonoBehaviour:
     conditionValue: 
     minigameSceneName: 
     stageCommands:
-    - action: 1
-      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-      position: 2
-      expression: a
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: marah
       flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Sprite mereka hilang.
+    dialogueText: Tono mengintip dari jendela. Di dalam terlihat jelas bahwa Rico
+      menganiaya Radit.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -120,26 +125,27 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: marah
+      flipX: 0
+    - action: 1
+      character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+      position: 1
+      expression: Panik
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Eh.. B-boleh k// Tono mengintip dari jendela. Di dalam terlihat
-      jelas bahwa Rico menganiaya Radit.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: "CCTV di pojok atas kelas terlihat mati\u2014lampu indikatornya
-      padam.  //"
+    dialogueText: "CCTV di pojok atas kelas terlihat mati\u2014 lampu indikatornya
+      padam. "
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -163,7 +169,7 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
     dialogueText: (Radit...!)
-    isThought: 0
+    isThought: 1
     expression: 
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
@@ -171,26 +177,18 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: cemas
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
     dialogueText: (Sial... Ini salahku. Karena aku menolak Rico tadi, dia malah melampiaskannya
       ke Radit. Kalau dibiarkan, Radit bisa babak belur... Aku harus melakukan sesuatu!)
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Sprite TONO hilang
-    isThought: 0
+    isThought: 1
     expression: 
     backgroundOverride: {fileID: 0}
     sfxClip: {fileID: 0}
@@ -211,7 +209,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: cemas
+      flipX: 0
     choices:
     - choiceText: 'Minta Bantuan Aris '
       conditions:
@@ -240,3 +243,7 @@ MonoBehaviour:
   fadeTransition: 1
   nextDialogue: {fileID: 0}
   conditionalNexts: []
+  showEndCard: 0
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

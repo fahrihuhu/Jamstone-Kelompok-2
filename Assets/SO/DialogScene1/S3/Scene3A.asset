@@ -20,7 +20,7 @@ MonoBehaviour:
     dialogueText: ' SFX: Suara riuh murid di koridor.'
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: -173954723506884847, guid: d7df5b913413b554dbfc2347973c852d, type: 3}
+    backgroundOverride: {fileID: 2502215086801707522, guid: 50f28a2eb4bbfb649b058726ca75469d, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
@@ -98,7 +98,8 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
       position: 2
-      expression: a
+      expression: senyum
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -119,6 +120,7 @@ MonoBehaviour:
       character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
       position: 2
       expression: a
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -135,11 +137,13 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 1
-      expression: a
+      expression: netral
+      flipX: 0
     - action: 0
       character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
       position: 3
-      expression: a
+      expression: senyum
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -212,7 +216,8 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
       position: 4
-      expression: a
+      expression: netral
+      flipX: 1
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -225,7 +230,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -252,7 +262,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -265,11 +280,16 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Sprite Rico hilang. Gita kini menatap Tono dengan senyum tipis.
+    dialogueText: Rico pun pergi. Gita kini menatap Tono dengan senyum tipis.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -282,12 +302,18 @@ MonoBehaviour:
     - action: 1
       character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
       position: 3
-      expression: a
+      expression: netral
+      flipX: 0
     - action: 0
       character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
       position: 3
-      expression: a
+      expression: netral
+      flipX: 1
     choices: []
   fadeTransition: 0
   nextDialogue: {fileID: 11400000, guid: b7470e2f1ac633941aed202a4343f3f1, type: 2}
   conditionalNexts: []
+  showEndCard: 0
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

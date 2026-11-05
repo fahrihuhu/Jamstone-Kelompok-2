@@ -20,41 +20,56 @@ MonoBehaviour:
     dialogueText: (Gita! Aku harus minta bantuan Faksi Kantin!)
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: -8464843772531519362, guid: 96138311690c4f1478b68b65838b7f89, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Tono berlari cepat ke belakang kantin dan menemui Gita. Gita
-      langsung memanggil 2 orang temannya yang berbadan besar dari tongkrongan untuk
-      mendatangi lokasi bersama Tono. //
+    dialogueText: Drap.Drap.Drap
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
+    backgroundOverride: {fileID: 2502215086801707522, guid: 50f28a2eb4bbfb649b058726ca75469d, type: 3}
+    sfxClip: {fileID: 8300000, guid: 5174a1997528a19439fe942488e4b8aa, type: 3}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Sprite Tono dan Gita muncul di kiri, Rico muncul di kanan
+    dialogueText: Tono berlari cepat ke belakang kantin dan menemui Gita. Gita langsung
+      memanggil 2 orang temannya yang berbadan besar dari tongkrongan untuk mendatangi
+      lokasi bersama Tono.
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: 2502215086801707522, guid: 50f28a2eb4bbfb649b058726ca75469d, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 2
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -62,17 +77,37 @@ MonoBehaviour:
       amat kagak ada yang nemenin.
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: -6782079960528466537, guid: 76b1a0624390dc246af0ba4d3b09b5d1, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 1
+      expression: marah
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 0
+      expression: cemas
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: marah
+      flipX: 1
+    - action: 0
+      character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
+      position: 4
+      expression: Panik
+      flipX: 1
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Rico kaget melihat Gita datang membawa 2 anak tongkrongan besar
+    dialogueText: Rico kaget melihat Gita datang membawa 2 anak tongkrongan besar
       di belakangnya.
     isThought: 0
     expression: 
@@ -82,7 +117,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: cemas
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -95,7 +135,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -123,7 +168,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: senyum
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -136,7 +186,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -149,7 +204,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 1
+      expression: cemas
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -157,20 +217,7 @@ MonoBehaviour:
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: 'SFX: Suara teriakan benturan meja roboh.'
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 2063826154672905881, guid: a99f48091e762f0489a2f7fb08fad1b7, type: 3}
-    sfxClip: {fileID: 0}
+    sfxClip: {fileID: 8300000, guid: 29a72c4194be7e2488cfbecce37bd15e, type: 3}
     sfxVolume: 1
     conditionKey: 
     conditionValue: 
@@ -182,5 +229,5 @@ MonoBehaviour:
   conditionalNexts: []
   showEndCard: 1
   endCardText: To Be Continued
-  endCardSfx: {fileID: 0}
+  endCardSfx: {fileID: 8300000, guid: 859b1fe957303904a8a244d2cd902d83, type: 3}
   endCardSfxVolume: 1
