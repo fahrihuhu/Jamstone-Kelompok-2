@@ -26,7 +26,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: 
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -93,7 +98,22 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 2
+      expression: marah
+      flipX: 0
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: netral
+      flipX: 0
+    - action: 1
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 4
+      expression: senyum
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 

@@ -17,6 +17,18 @@ public class ChaseMinigame : MonoBehaviour
     public float readyDelay = 1.5f;
     [Tooltip("Jeda menampilkan hasil sebelum kembali ke cerita")]
     public float resultDelay = 1.5f;
+    [Tooltip("Lama layar memudar jadi hitam setelah hasil ditampilkan (detik)")]
+    public float fadeOutDuration = 0.6f;
+
+    [Header("Teks Hasil di Layar Hitam")]
+    [Tooltip("Teks yang muncul di layar hitam kalau pemain tertangkap")]
+    [TextArea(2, 4)] public string caughtText = "Tono tertangkap oleh Rico dan anak buahnya.\nMungkin sebaiknya Tono tidak macam-macam dengan mereka\u2026";
+    [Tooltip("Teks yang muncul di layar hitam kalau pemain berhasil lolos")]
+    [TextArea(2, 4)] public string escapedText = "Tono berhasil selamat dari kejaran Rico dan anak buahnya.\nMungkin untuk sekarang\u2026";
+    [Tooltip("Lama teks bertahan di layar hitam (detik)")]
+    public float resultTextDuration = 3f;
+    [Tooltip("Lama teks fade in dan fade out (detik)")]
+    public float resultTextFade = 0.5f;
     [Tooltip("Jarak (dalam hitungan sel) pemain dan pengejar yang dianggap tertangkap")]
     public float catchDistance = 0.6f;
 
@@ -86,6 +98,9 @@ public class ChaseMinigame : MonoBehaviour
     private float timeLeft;
     private bool finished;
     private bool won;
+    private float fadeAlpha; // 0 = normal, 1 = layar hitam penuh (fade out saat minigame selesai)
+    private string blackText = "";
+    private float blackTextAlpha;
 
     private void Start()
     {
@@ -174,6 +189,23 @@ public class ChaseMinigame : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(resultDelay);
 
+        // Layar fade out ke hitam sebelum kembali ke cerita
+        float t = 0f;
+        while (t < fadeOutDuration)
+        {
+            t += Time.unscaledDeltaTime;
+            fadeAlpha = Mathf.Clamp01(t / fadeOutDuration);
+            yield return null;
+        }
+        fadeAlpha = 1f;
+
+        // Teks hasil di layar hitam
+        blackText = playerWon ? escapedText : caughtText;
+        yield return FadeBlackText(0f, 1f, resultTextFade);
+        yield return new WaitForSecondsRealtime(resultTextDuration);
+        yield return FadeBlackText(1f, 0f, resultTextFade);
+        blackText = "";
+
         if (GameManager.Instance != null)
         {
             // Dijalankan dari VNScene: laporkan hasil, GameManager yang menutup scene ini
@@ -185,6 +217,18 @@ public class ChaseMinigame : MonoBehaviour
             Debug.Log($"Hasil minigame: {(playerWon ? "lolos" : "tertangkap")} (GameManager tidak ditemukan, memuat ulang scene)");
             SceneManager.LoadScene(gameObject.scene.name);
         }
+    }
+
+    private IEnumerator FadeBlackText(float from, float to, float duration)
+    {
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.unscaledDeltaTime;
+            blackTextAlpha = Mathf.Lerp(from, to, t / duration);
+            yield return null;
+        }
+        blackTextAlpha = to;
     }
 
     // ================= INPUT =================
@@ -334,6 +378,30 @@ public class ChaseMinigame : MonoBehaviour
         hint.normal.textColor = new Color(1f, 1f, 1f, 0.6f);
         GUI.Label(new Rect(0, Screen.height - size * 1.5f, Screen.width, size * 1.4f),
             "Panah / WASD untuk belok", hint);
+
+        // Fade out: digambar paling akhir supaya menutupi semuanya
+        if (fadeAlpha > 0f)
+        {
+            Color old = GUI.color;
+            GUI.color = new Color(0f, 0f, 0f, fadeAlpha);
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), Texture2D.whiteTexture);
+            GUI.color = old;
+        }
+
+        // Teks hasil di atas layar hitam
+        if (!string.IsNullOrEmpty(blackText) && blackTextAlpha > 0f)
+        {
+            GUIStyle textStyle = new GUIStyle(GUI.skin.label)
+            {
+                fontSize = Mathf.RoundToInt(Screen.height * 0.04f),
+                alignment = TextAnchor.MiddleCenter,
+                wordWrap = true
+            };
+            textStyle.normal.textColor = new Color(1f, 1f, 1f, blackTextAlpha);
+
+            float w = Screen.width * 0.8f;
+            GUI.Label(new Rect((Screen.width - w) / 2f, 0f, w, Screen.height), blackText, textStyle);
+        }
     }
 }
 

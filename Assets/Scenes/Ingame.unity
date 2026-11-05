@@ -3384,7 +3384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b682c9e42e26d74391b266594196b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  startingDialogue: {fileID: 11400000, guid: 3f26ef5474a58e4409a2f1d4148f9b6e, type: 2}
+  startingDialogue: {fileID: 11400000, guid: 638c6e3eb82959b4c843a5b8e24f41a6, type: 2}
   dialogueBox: {fileID: 1508556271}
   nameText: {fileID: 854720040}
   dialogueText: {fileID: 1245013949}
