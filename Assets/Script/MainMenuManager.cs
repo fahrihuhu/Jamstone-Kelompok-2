@@ -119,6 +119,16 @@ public class MainMenuManager : MonoBehaviour
             Debug.Log("Membuka Mail/Message Panel...");
     }
 
+    // Dipanggil dari tombol Back: tutup semua panel/popup dan kembali ke tampilan main menu
+    public void OnBackClicked()
+    {
+        if (actSelectPanel != null) actSelectPanel.SetActive(false);
+        if (newGamePopup != null) newGamePopup.SetActive(false);
+        if (galleryPanel != null) galleryPanel.SetActive(false);
+        if (settingsPanel != null) settingsPanel.SetActive(false);
+        if (mailPanel != null) mailPanel.SetActive(false);
+    }
+
     public void ClosePanel(GameObject panel)
     {
         if (panel != null)
