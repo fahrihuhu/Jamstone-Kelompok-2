@@ -17,20 +17,8 @@ MonoBehaviour:
   lines:
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
-    dialogueText: Maaf, Aris. Aku tidak mau jadi spionase untuk siapa pun.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 0
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Fade out. Sprite Tono dan Aris hilang.
+    dialogueText: Begitu... Sayang sekali. Semoga kamu bisa bertahan hidup sendirian
+      di sini, Tono.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -66,8 +54,22 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: netral
+      flipX: 0
+    - action: 1
+      character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+      position: 3
+      expression: netral
+      flipX: 1
     choices: []
   fadeTransition: 0
   nextDialogue: {fileID: 11400000, guid: 02e390acc3878ff4dba459771ef2dfb0, type: 2}
   conditionalNexts: []
+  showEndCard: 0
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

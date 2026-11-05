@@ -26,7 +26,17 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: senyum
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 3
+      expression: netral
+      flipX: 1
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
     speakerNameOverride: Gita
@@ -127,12 +137,14 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices:
-    - choiceText: '[ Menerima Tawaran Gita ] (Membantu bisnis sontekan Kantin)'
+    - choiceText: 'Menerima Tawaran Gita '
+      conditions: []
       nextDialogue: {fileID: 11400000, guid: bd6caa9be3bc0b946b9d6d24650ee6eb, type: 2}
       nextLineIndex: 0
       setFlagKey: gita_offer
       setFlagValue: menerima
-    - choiceText: '[ Menolak Tawaran Gita ] (Menolak terlibat bisnis ilegal)'
+    - choiceText: Menolak Tawaran Gita
+      conditions: []
       nextDialogue: {fileID: 11400000, guid: 6277d2447824c0e47a558bbbee606665, type: 2}
       nextLineIndex: 0
       setFlagKey: gita_offer
@@ -140,3 +152,7 @@ MonoBehaviour:
   fadeTransition: 0
   nextDialogue: {fileID: 0}
   conditionalNexts: []
+  showEndCard: 0
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

@@ -17,10 +17,10 @@ MonoBehaviour:
   lines:
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: ' SFX: Suara riuh murid di koridor.'
+    dialogueText: (Suara riuh murid di koridor.)
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: -6782079960528466537, guid: f017ccbba3f47c04ebfd181703a1d895, type: 3}
+    backgroundOverride: {fileID: 2502215086801707522, guid: 50f28a2eb4bbfb649b058726ca75469d, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
@@ -93,12 +93,7 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands:
-    - action: 0
-      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
-      position: 2
-      expression: a
-      flipX: 0
+    stageCommands: []
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -116,7 +111,7 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
       position: 2
-      expression: a
+      expression: senyum
       flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
@@ -134,12 +129,12 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 1
-      expression: a
+      expression: netral
       flipX: 0
     - action: 0
       character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
       position: 3
-      expression: a
+      expression: senyum
       flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
@@ -207,7 +202,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 1
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -233,7 +233,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: senyum
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -246,7 +251,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: marah
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -272,24 +282,11 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Sprite Gita muncul menyela dari arah kanan
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
     stageCommands:
-    - action: 0
-      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
-      position: 4
-      expression: a
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: marah
       flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
@@ -304,7 +301,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
+      position: 4
+      expression: netral
+      flipX: 1
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -344,7 +346,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 2
+      character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
+      position: 3
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
     speakerNameOverride: Rico
@@ -376,12 +383,12 @@ MonoBehaviour:
     - action: 1
       character: {fileID: 11400000, guid: 5f46f435b99071d48b8cf6d311db3080, type: 2}
       position: 3
-      expression: a
+      expression: netral
       flipX: 0
     - action: 0
       character: {fileID: 11400000, guid: 3b51b1c22931b8a4c867e012f9d2fefd, type: 2}
       position: 3
-      expression: a
+      expression: Senyum
       flipX: 0
     choices: []
   fadeTransition: 0

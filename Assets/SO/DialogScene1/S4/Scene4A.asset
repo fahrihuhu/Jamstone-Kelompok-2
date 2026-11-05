@@ -15,7 +15,7 @@ MonoBehaviour:
   sceneId: S4A
   sceneDescription: MENERIMA TAWARAN GITA SEBELUMNYA
   lines:
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
     dialogueText: Langsung ke intinya saja. Aku mendengar percakapanmu dengan Gita
       di koridor tadi.
@@ -42,7 +42,7 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
     dialogueText: ' Lebih tepatnya, aku dapat laporan'
     isThought: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
     dialogueText: Dan dari laporan yang kudapat, kamu memilih bersekutu dengan Gita
       untuk bisnis busuk mereka di kantin.
@@ -96,7 +96,7 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
     dialogueText: Memilih perlindungan dari sekelompok kriminal sekolah? Keputusan
       yang sangat amat ceroboh, Tono.
@@ -136,7 +136,7 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
     dialogueText: Aku tadinya mau menawarkan perlindungan resmi dari OSIS. Tapi karena
       kamu memilih bersekutu dengan faksi Kantin, aku tidak bisa membantumu lagi.
@@ -150,7 +150,7 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
     dialogueText: "Jangan menyalahkanku kalau namamu terseret saat OSIS menertibkan
       kalian nanti. Selamat menikmati \u2018perlindunganmu\u2019 "
@@ -166,7 +166,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Fade out. Kedua sprite hilang
+    dialogueText: Tono keluar dari ruangan OSIS.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -175,24 +175,21 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 1
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: netral
+      flipX: 0
+    - action: 1
+      character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+      position: 3
+      expression: netral
+      flipX: 1
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Tono keluar dari ruangan OSIS.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Isi pikirannya bercampur aduk //
+    dialogueText: Isi pikirannya bercampur aduk
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -232,3 +229,7 @@ MonoBehaviour:
   fadeTransition: 0
   nextDialogue: {fileID: 11400000, guid: 02e390acc3878ff4dba459771ef2dfb0, type: 2}
   conditionalNexts: []
+  showEndCard: 0
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

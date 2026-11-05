@@ -133,7 +133,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: 'SFX: Langkah kaki lain mendekat.'
+    dialogueText: (Langkah kaki lain mendekat.)
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}

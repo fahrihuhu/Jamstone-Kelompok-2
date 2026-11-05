@@ -57,7 +57,8 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 2
-      expression: a
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -110,7 +111,12 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 2
+      expression: netral
+      flipX: 1
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -127,11 +133,13 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 1
-      expression: 
+      expression: senyum
+      flipX: 0
     - action: 0
       character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
       position: 3
       expression: 
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: ???
@@ -213,8 +221,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: 'Sprite mereka hilang. Transisi ke BG ruangan OSIS.. SFX: suara
-      AC'
+    dialogueText: (suara AC)
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -227,22 +234,8 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: 'Sprite mereka hilang. Transisi ke BG ruangan OSIS.. SFX: suara
-      AC'
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: // Tono menginjakkan kakinya ke ruangan OSIS. Suasananya hening,
-      sejuk karena AC.
+    dialogueText: Tono menginjakkan kakinya ke ruangan OSIS. Suasananya hening, sejuk
+      karena AC.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -282,33 +275,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: Orang itu berdiri dan menghampiri Tono. //
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Sprite Tono muncul dikiri dan Aris di kanan.
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: Sprite Tono muncul dikiri dan Aris di kanan.
+    dialogueText: Orang itu berdiri dan menghampiri Tono.
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 0}
@@ -330,9 +297,19 @@ MonoBehaviour:
     conditionKey: 
     conditionValue: 
     minigameSceneName: 
-    stageCommands: []
+    stageCommands:
+    - action: 0
+      character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
+      position: 1
+      expression: netral
+      flipX: 0
+    - action: 0
+      character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
+      position: 3
+      expression: netral
+      flipX: 1
     choices: []
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
     dialogueText: Selamat siang, Tono. Benar aku Aris.
     isThought: 0
@@ -347,7 +324,7 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: // Aris mengulurkan tangannya untuk berjabat tangan, yang dibalas
+    dialogueText: Aris mengulurkan tangannya untuk berjabat tangan, yang dibalas
       Tono dengan jabat tangan yang canggung. Sensasi dingin tangan Aris seolah menegaskan
       atmosfer ruangan ini.
     isThought: 0
@@ -360,7 +337,7 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 0}
+  - character: {fileID: 11400000, guid: 183f836956bc50d48904bbf8b612ded2, type: 2}
     speakerNameOverride: Aris
     dialogueText: Aku sengaja memanggilmu ke sini untuk membahas situasi keamananmu
       di SMA Garuda.
@@ -396,3 +373,7 @@ MonoBehaviour:
   - conditionKey: gita_offer
     conditionValue: menolak
     nextDialogue: {fileID: 11400000, guid: 436bc946e0984fb4baaa47036566d35b, type: 2}
+  showEndCard: 0
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

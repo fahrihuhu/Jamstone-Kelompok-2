@@ -17,7 +17,7 @@ MonoBehaviour:
   lines:
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: ' SFX: Suara riuh murid di koridor.'
+    dialogueText: (Suara riuh murid di koridor.)
     isThought: 0
     expression: 
     backgroundOverride: {fileID: 2502215086801707522, guid: 50f28a2eb4bbfb649b058726ca75469d, type: 3}
