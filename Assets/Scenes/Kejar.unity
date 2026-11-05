@@ -5393,7 +5393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bfc4aff841c23d4a890ad4fa5058a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChaseMinigame
-  surviveDuration: 10
+  surviveDuration: 25
   readyDelay: 1.5
   resultDelay: 1.5
   fadeOutDuration: 0.6
