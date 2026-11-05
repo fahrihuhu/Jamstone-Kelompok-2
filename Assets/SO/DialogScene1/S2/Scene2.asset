@@ -43,7 +43,8 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 2
-      expression: a
+      expression: netral
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -100,8 +101,9 @@ MonoBehaviour:
     stageCommands:
     - action: 1
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
-      position: 2
+      position: 1
       expression: a
+      flipX: 1
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -144,11 +146,13 @@ MonoBehaviour:
     - action: 0
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 1
-      expression: a
+      expression: netral
+      flipX: 0
     - action: 0
       character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
       position: 3
-      expression: a
+      expression: netral
+      flipX: 1
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: Radit
@@ -816,10 +820,12 @@ MonoBehaviour:
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 1
       expression: a
+      flipX: 0
     - action: 1
       character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
       position: 3
       expression: a
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
     speakerNameOverride: 

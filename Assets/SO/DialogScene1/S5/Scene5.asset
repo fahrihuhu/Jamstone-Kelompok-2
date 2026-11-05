@@ -47,6 +47,7 @@ MonoBehaviour:
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 2
       expression: a
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -106,6 +107,7 @@ MonoBehaviour:
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 2
       expression: a
+      flipX: 0
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
@@ -151,10 +153,12 @@ MonoBehaviour:
       character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
       position: 1
       expression: a
+      flipX: 0
     - action: 0
       character: {fileID: 11400000, guid: 77df8e0996b6ffe48a13e4e758e35474, type: 2}
       position: 3
       expression: a
+      flipX: 0
     choices: []
   - character: {fileID: 11400000, guid: 3b5617a48f58d8c4ca468e81a8bb0bd6, type: 2}
     speakerNameOverride: Tono
@@ -210,29 +214,29 @@ MonoBehaviour:
     stageCommands: []
     choices:
     - choiceText: 'Minta Bantuan Aris '
+      conditions:
+      - key: osis_offer
+        value: terima
+        mustNotEqual: 0
       nextDialogue: {fileID: 11400000, guid: a39c89d2f063e2247b0f22157d71d2fc, type: 2}
       nextLineIndex: 0
       setFlagKey: jalur_aliansi
       setFlagValue: osis
     - choiceText: Minta Bantuan Faksi Kantin
+      conditions:
+      - key: gita_offer
+        value: terima
+        mustNotEqual: 0
       nextDialogue: {fileID: 11400000, guid: 259562e9539438e4681b14f53bfdf086, type: 2}
       nextLineIndex: 0
       setFlagKey: jalur_aliansi
       setFlagValue: kantin
     - choiceText: 'Turun Tangan Langsung '
+      conditions: []
       nextDialogue: {fileID: 11400000, guid: 173dc52006a6abf4ab178268e9ad049a, type: 2}
       nextLineIndex: 0
       setFlagKey: jalur_aliansi
       setFlagValue: netral
   fadeTransition: 1
   nextDialogue: {fileID: 0}
-  conditionalNexts:
-  - conditionKey: Minta Bantuan Aris
-    conditionValue: 
-    nextDialogue: {fileID: 11400000, guid: a39c89d2f063e2247b0f22157d71d2fc, type: 2}
-  - conditionKey: Minta Bantuan Faksi Kantin
-    conditionValue: 
-    nextDialogue: {fileID: 11400000, guid: 259562e9539438e4681b14f53bfdf086, type: 2}
-  - conditionKey: Turun Tangan Langsung
-    conditionValue: 
-    nextDialogue: {fileID: 11400000, guid: 173dc52006a6abf4ab178268e9ad049a, type: 2}
+  conditionalNexts: []

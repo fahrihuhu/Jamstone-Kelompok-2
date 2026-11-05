@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     [Header("UI - Pilihan")]
     public GameObject choicePanel;
     public Button choiceButtonPrefab;
+    [Tooltip("Opacity tombol pilihan yang terkunci (syarat belum terpenuhi)")]
+    [Range(0f, 1f)] public float lockedChoiceAlpha = 0.4f;
 
     [Header("Teks")]
     [Tooltip("Jeda per huruf (detik). Set 0 supaya teks langsung muncul (berguna untuk tes)")]
@@ -44,6 +46,20 @@ public class GameManager : MonoBehaviour
     public float fadeDuration = 0.5f;
     [Tooltip("Lama layar tetap gelap sebelum scene berikutnya muncul (detik)")]
     public float blackHoldDuration = 0.3f;
+
+    [Header("Layar Akhir (To Be Continued)")]
+    [Tooltip("Scene Main Menu yang dimuat setelah layar akhir selesai. Harus ada di Build Settings.")]
+    public string mainMenuSceneName = "MainMenu";
+    [Tooltip("TextMeshPro untuk teks akhir. Taruh sebagai ANAK dari objek Fade Overlay supaya tampil di atas layar hitam.")]
+    public TextMeshProUGUI endCardText;
+    [Tooltip("Durasi layar menghitam. Kecil = mendadak (detik)")]
+    public float endBlackoutDuration = 0.1f;
+    [Tooltip("Jeda gelap sebelum teks mulai muncul (detik)")]
+    public float endPauseBeforeText = 1f;
+    [Tooltip("Durasi teks fade in (detik)")]
+    public float endTextFadeIn = 1.5f;
+    [Tooltip("Lama teks bertahan sebelum kembali ke Main Menu (detik)")]
+    public float endHoldDuration = 3f;
 
     [Header("Minigame")]
     [Tooltip("Root Canvas VN, disembunyikan selama minigame berjalan")]
@@ -221,9 +237,39 @@ public class GameManager : MonoBehaviour
         {
             Button btn = Instantiate(choiceButtonPrefab, choicePanel.transform);
             btn.GetComponentInChildren<TextMeshProUGUI>().text = choice.choiceText;
-            btn.onClick.AddListener(() => OnChoiceSelected(choice));
+
+            bool unlocked = IsChoiceUnlocked(choice);
+            btn.interactable = unlocked;
+            if (!unlocked)
+            {
+                // Redupkan dan blok klik; tombol tetap tampil
+                CanvasGroup cg = btn.GetComponent<CanvasGroup>();
+                if (cg == null) cg = btn.gameObject.AddComponent<CanvasGroup>();
+                cg.alpha = lockedChoiceAlpha;
+                cg.interactable = false;
+                cg.blocksRaycasts = false;
+            }
+            else
+            {
+                btn.onClick.AddListener(() => OnChoiceSelected(choice));
+            }
+
             spawnedChoiceButtons.Add(btn.gameObject);
         }
+    }
+
+    // Pilihan terbuka kalau semua syaratnya terpenuhi (atau tidak punya syarat)
+    private bool IsChoiceUnlocked(DialogueChoice choice)
+    {
+        if (choice.conditions == null) return true;
+
+        foreach (var c in choice.conditions)
+        {
+            if (string.IsNullOrEmpty(c.key)) continue;
+            bool equal = GetFlag(c.key) == c.value;
+            if (c.mustNotEqual ? equal : !equal) return false;
+        }
+        return true;
     }
 
     private void OnChoiceSelected(DialogueChoice choice)
@@ -267,6 +313,13 @@ public class GameManager : MonoBehaviour
     {
         if (currentDialogue != null)
         {
+            // 0. Layar akhir (To Be Continued) -> kembali ke Main Menu
+            if (currentDialogue.showEndCard)
+            {
+                StartCoroutine(RunEndCard(currentDialogue));
+                return;
+            }
+
             // 1. Cek lanjutan bersyarat dulu (berdasarkan story flag)
             if (currentDialogue.conditionalNexts != null)
             {
@@ -327,18 +380,66 @@ public class GameManager : MonoBehaviour
         isTransitioning = false;
     }
 
-    private IEnumerator Fade(float from, float to)
+    private IEnumerator Fade(float from, float to, float duration = -1f)
     {
+        if (duration < 0f) duration = fadeDuration;
+
         fadeOverlay.blocksRaycasts = true; // klik tidak tembus selama fade
         float t = 0f;
-        while (t < fadeDuration)
+        while (t < duration)
         {
             t += Time.unscaledDeltaTime;
-            fadeOverlay.alpha = Mathf.Lerp(from, to, t / fadeDuration);
+            fadeOverlay.alpha = Mathf.Lerp(from, to, t / duration);
             yield return null;
         }
         fadeOverlay.alpha = to;
         fadeOverlay.blocksRaycasts = to > 0f;
+    }
+
+    // Layar akhir: SFX + blackout, teks fade in, tahan sebentar, lalu kembali ke Main Menu
+    private IEnumerator RunEndCard(DialogueData data)
+    {
+        isTransitioning = true; // blok klik & save selama layar akhir
+        StopTextRoutines();
+        ClearChoices();
+        SetIndicator(false);
+
+        if (data.endCardSfx != null && sfxSource != null)
+            sfxSource.PlayOneShot(data.endCardSfx, data.endCardSfxVolume);
+
+        if (endCardText != null)
+        {
+            endCardText.text = data.endCardText;
+            endCardText.alpha = 0f;
+        }
+
+        // Blackout mendadak
+        if (fadeOverlay != null)
+            yield return Fade(0f, 1f, endBlackoutDuration);
+        else
+            Debug.LogWarning("Fade Overlay kosong: layar tidak akan menghitam di layar akhir.");
+
+        dialogueBox.SetActive(false);
+
+        yield return new WaitForSecondsRealtime(endPauseBeforeText);
+
+        // Teks fade in pelan
+        if (endCardText != null)
+        {
+            float t = 0f;
+            while (t < endTextFadeIn)
+            {
+                t += Time.unscaledDeltaTime;
+                endCardText.alpha = Mathf.Clamp01(t / endTextFadeIn);
+                yield return null;
+            }
+            endCardText.alpha = 1f;
+        }
+
+        yield return new WaitForSecondsRealtime(endHoldDuration);
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(mainMenuSceneName);
     }
 
     // ================= MINIGAME =================

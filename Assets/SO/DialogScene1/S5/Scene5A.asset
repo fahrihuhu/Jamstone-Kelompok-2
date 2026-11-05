@@ -225,3 +225,7 @@ MonoBehaviour:
   fadeTransition: 1
   nextDialogue: {fileID: 0}
   conditionalNexts: []
+  showEndCard: 1
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

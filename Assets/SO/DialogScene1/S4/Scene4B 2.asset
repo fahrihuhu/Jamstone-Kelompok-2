@@ -88,14 +88,16 @@ MonoBehaviour:
     stageCommands: []
     choices:
     - choiceText: Terima Tawaran OSIS
+      conditions: []
       nextDialogue: {fileID: 11400000, guid: 8afc1c6c78f134e4698f4f3d549d842d, type: 2}
       nextLineIndex: 0
-      setFlagKey: osis_offer_2
+      setFlagKey: osis_offer
       setFlagValue: terima
     - choiceText: Tolak Tawaran OSIS
+      conditions: []
       nextDialogue: {fileID: 11400000, guid: 200fb53e406b1604986aac5a8ff49855, type: 2}
       nextLineIndex: 0
-      setFlagKey: osis_offer_2
+      setFlagKey: osis_offer
       setFlagValue: tolak
   fadeTransition: 0
   nextDialogue: {fileID: 0}

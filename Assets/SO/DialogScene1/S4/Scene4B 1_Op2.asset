@@ -69,5 +69,5 @@ MonoBehaviour:
     stageCommands: []
     choices: []
   fadeTransition: 0
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: 02e390acc3878ff4dba459771ef2dfb0, type: 2}
   conditionalNexts: []

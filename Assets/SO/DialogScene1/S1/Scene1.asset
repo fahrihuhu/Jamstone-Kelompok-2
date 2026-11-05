@@ -21,7 +21,7 @@ MonoBehaviour:
       tetap sempurna, dan lulus..")
     isThought: 1
     expression: 
-    backgroundOverride: {fileID: 3603805097988156399, guid: 77dc3ab270ef1b74b948bcf4b27b3bfb, type: 3}
+    backgroundOverride: {fileID: -6782079960528466537, guid: f017ccbba3f47c04ebfd181703a1d895, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 

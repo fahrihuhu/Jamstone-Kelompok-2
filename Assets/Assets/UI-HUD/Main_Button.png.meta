@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 09da7245b669295438966e7ea8fe24c8
+guid: a2cd8e1d1f4042c49a4b8fba56d43c65
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8560451000399327191
-    second: Free Chicken Sprites_0
+      213: 5033749756001249193
+    second: Main_Button_0
   - first:
-      213: -172105496523427829
-    second: Free Chicken Sprites_1
+      213: 4081128263239192167
+    second: Main_Button_1
   - first:
-      213: -1036979789468306671
-    second: Free Chicken Sprites_2
+      213: 4869518731259947996
+    second: Main_Button_2
   - first:
-      213: -7729539223606550471
-    second: Free Chicken Sprites_3
-  - first:
-      213: 6835891653889965918
-    second: Free Chicken Sprites_4
-  - first:
-      213: -853786803854351760
-    second: Free Chicken Sprites_5
+      213: 4806389426535748401
+    second: Main_Button_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,57 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Free Chicken Sprites_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7df60f364d4dcc670800000000000000
-      internalID: 8560451000399327191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Free Chicken Sprites_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b0034d776fe8c9df0800000000000000
-      internalID: -172105496523427829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Free Chicken Sprites_2
+      name: Main_Button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 14
-        height: 14
+        width: 952
+        height: 592
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,42 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1137b792068eb91f0800000000000000
-      internalID: -1036979789468306671
+      spriteID: 9a7e9aeabb87bd540800000000000000
+      internalID: 5033749756001249193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free Chicken Sprites_3
+      name: Main_Button_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 930ab7b67092bb490800000000000000
-      internalID: -7729539223606550471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Free Chicken Sprites_4
-      rect:
-        serializedVersion: 2
-        x: 31
+        x: 0
         y: 0
         width: 15
-        height: 14
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5f3b29bd37fdde50800000000000000
-      internalID: 6835891653889965918
+      spriteID: 76ecd2d588413a830800000000000000
+      internalID: 4081128263239192167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free Chicken Sprites_5
+      name: Main_Button_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 13
-        height: 15
+        x: 39
+        y: 300
+        width: 884
+        height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +168,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 072685aec6db624f0800000000000000
-      internalID: -853786803854351760
+      spriteID: cdb2cdb7c71049340800000000000000
+      internalID: 4869518731259947996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Button_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 24
+        width: 884
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1335bd4d7b9b3b240800000000000000
+      internalID: 4806389426535748401
       vertices: []
       indices: 
       edges: []
@@ -260,12 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Free Chicken Sprites_0: 8560451000399327191
-      Free Chicken Sprites_1: -172105496523427829
-      Free Chicken Sprites_2: -1036979789468306671
-      Free Chicken Sprites_3: -7729539223606550471
-      Free Chicken Sprites_4: 6835891653889965918
-      Free Chicken Sprites_5: -853786803854351760
+      Main_Button_0: 5033749756001249193
+      Main_Button_1: 4081128263239192167
+      Main_Button_2: 4869518731259947996
+      Main_Button_3: 4806389426535748401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

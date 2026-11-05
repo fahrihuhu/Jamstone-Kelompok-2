@@ -16,6 +16,10 @@ public class MainMenuManager : MonoBehaviour
     [Header("Tombol UI (Opsional jika mau di-disable)")]
     public Button continueButton;
 
+    [Header("Pilih Act")]
+    [Tooltip("Panel berisi tombol-tombol act. Muncul saat tombol New Game ditekan.")]
+    public GameObject actSelectPanel;
+
     [Header("Popup Konfirmasi New Game")]
     [Tooltip("Panel Yes/No yang muncul kalau sudah ada save. Kosongkan untuk langsung mulai tanpa konfirmasi.")]
     public GameObject newGamePopup;
@@ -27,6 +31,7 @@ public class MainMenuManager : MonoBehaviour
     private void Start()
     {
         if (newGamePopup != null) newGamePopup.SetActive(false);
+        if (actSelectPanel != null) actSelectPanel.SetActive(false);
 
         if (continueButton != null)
         {
@@ -34,7 +39,16 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
-    // Dipanggil dari tombol New Game
+    // Dipanggil dari tombol New Game di menu utama: cuma membuka panel pilih act
+    public void OnOpenActPanelClicked()
+    {
+        if (actSelectPanel != null)
+            actSelectPanel.SetActive(true);
+        else
+            OnNewGameClicked(); // tidak ada panel act: langsung seperti dulu
+    }
+
+    // Dipanggil dari TOMBOL ACT (perilaku New Game yang lama pindah ke sini)
     public void OnNewGameClicked()
     {
         // Sudah ada save dan popup tersedia: minta konfirmasi dulu

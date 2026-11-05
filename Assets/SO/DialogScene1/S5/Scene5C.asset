@@ -231,19 +231,10 @@ MonoBehaviour:
     minigameSceneName: 
     stageCommands: []
     choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: 'Teks Fade In: To Be Continued'
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
   fadeTransition: 1
   nextDialogue: {fileID: 0}
   conditionalNexts: []
+  showEndCard: 1
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

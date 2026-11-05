@@ -166,24 +166,10 @@ MonoBehaviour:
     choices: []
   - character: {fileID: 0}
     speakerNameOverride: 
-    dialogueText: 'Layar mendadak blackout/hitam! SFX: Suara teriakan benturan meja
-      roboh.'
+    dialogueText: 'SFX: Suara teriakan benturan meja roboh.'
     isThought: 0
     expression: 
-    backgroundOverride: {fileID: 0}
-    sfxClip: {fileID: 0}
-    sfxVolume: 1
-    conditionKey: 
-    conditionValue: 
-    minigameSceneName: 
-    stageCommands: []
-    choices: []
-  - character: {fileID: 0}
-    speakerNameOverride: 
-    dialogueText: 'Teks Fade In: To Be Continued'
-    isThought: 0
-    expression: 
-    backgroundOverride: {fileID: 0}
+    backgroundOverride: {fileID: 2063826154672905881, guid: a99f48091e762f0489a2f7fb08fad1b7, type: 3}
     sfxClip: {fileID: 0}
     sfxVolume: 1
     conditionKey: 
@@ -194,3 +180,7 @@ MonoBehaviour:
   fadeTransition: 1
   nextDialogue: {fileID: 0}
   conditionalNexts: []
+  showEndCard: 1
+  endCardText: To Be Continued
+  endCardSfx: {fileID: 0}
+  endCardSfxVolume: 1

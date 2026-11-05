@@ -22,6 +22,17 @@ public class DialogueData : ScriptableObject
 
     [Tooltip("Dicek berurutan dari atas. Yang pertama cocok dengan story flag akan dipakai. Kalau tidak ada yang cocok, dipakai Next Dialogue di atas.")]
     public ConditionalNext[] conditionalNexts;
+
+    [Header("Layar Akhir (opsional)")]
+    [Tooltip("Centang kalau scene ini adalah akhir bagian cerita: layar jadi hitam, teks muncul pelan, lalu kembali ke Main Menu.")]
+    public bool showEndCard;
+
+    [Tooltip("Teks yang muncul di layar hitam, misal: To Be Continued")]
+    public string endCardText = "To Be Continued";
+
+    [Tooltip("SFX yang diputar tepat saat layar menghitam, misal: pukulan Brakkk. Opsional.")]
+    public AudioClip endCardSfx;
+    [Range(0f, 1f)] public float endCardSfxVolume = 1f;
 }
 
 [System.Serializable]
@@ -34,11 +45,11 @@ public class ConditionalNext
 
 public enum StageAction
 {
-    Show,              
-    Hide,              
-    ChangeExpression,  
-    HideAll,   
-    Flip        
+    Show,              // Munculkan karakter di slot posisi tertentu
+    Hide,              // Hilangkan satu karakter dari layar
+    ChangeExpression,  // Ganti ekspresi karakter yang sudah ada di layar
+    HideAll,           // Kosongkan seluruh panggung (misal pindah lokasi)
+    Flip               // Balik karakter yang sudah ada di layar
 }
 
 public enum StagePosition
@@ -124,10 +135,25 @@ public class DialogueLine
     }
 }
 
+// Satu syarat story flag untuk membuka sebuah pilihan.
+[System.Serializable]
+public class ChoiceCondition
+{
+    public string key;
+    public string value;
+
+    [Tooltip("Centang kalau syaratnya 'flag TIDAK boleh bernilai ini' (kebalikan)")]
+    public bool mustNotEqual = false;
+}
+
 [System.Serializable]
 public class DialogueChoice
 {
     public string choiceText;
+
+    [Header("Syarat Pilihan (opsional)")]
+    [Tooltip("Pilihan tetap TAMPIL, tapi redup dan tidak bisa dipencet kalau ada syarat yang tidak terpenuhi. Semua syarat harus terpenuhi (AND). Kosongkan kalau pilihan selalu terbuka.")]
+    public ChoiceCondition[] conditions;
 
     [Tooltip("Dialogue Data tujuan kalau pilihan ini diambil (untuk branching antar scene)")]
     public DialogueData nextDialogue;
